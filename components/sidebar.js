@@ -86,7 +86,9 @@ class Sidebar extends HTMLElement {
               <div class="nav-item-sidebar flex-align ${page == 'team-selection' || page == 'schedule-match' ? 'active' : ''}">
                 <div class="flex-align2 g2">
                   <img src="images/match-management.png" >
+                  <a href="match-management.html">
                   <h6>Match Management </h6>
+                  </a>
                 </div>
                 <img src="images/arrow-bottom.png" class="arrow-bottom">
               </div>
@@ -95,9 +97,8 @@ class Sidebar extends HTMLElement {
                 <a href="calender-view.html" class="nav-collapse nav-item-sidebar  ${page == 'schedule-match' ? 'active' : ''}">
                   <h6>Calender View</h6>
                 </a>
-                <a href="team-selection.html" class="nav-collapse nav-item-sidebar  ${page == 'team-selection' ? 'active' : ''}">
-                  <h6>Team selection &
-                  Announcement</h6>
+                <a href="standing.html" class="nav-collapse nav-item-sidebar  ${page == 'team-selection' ? 'active' : ''}">
+                  <h6>Standings</h6>
                 </a>
 
               </div>

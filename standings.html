@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component  data-page="standings"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">League Details</h6>
+        </div>
+        <div class="header-right">
+          <div class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </div>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="main-section main-section2" >
+        <div class="row mt-3 align-items-center">
+            <div class="col-12 col-item">
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="custom-select-wrapper col-12 col-sm-6 col-md-4 col-lg-2">
+                        <select class="form-select custom-select" name="year">
+                            <option disabled selected>Year</option>
+                        </select>
+                    </div>
+                    <div class="custom-select-wrapper col-12 col-sm-6 col-md-4 col-lg-2">
+                        <select class="form-select custom-select" name="league">
+                            <option disabled selected>League</option>
+                        </select>
+                    </div>
+                    <div class="custom-select-wrapper col-12 col-sm-6 col-md-4 col-lg-2">
+                        <select class="form-select custom-select" name="series">
+                            <option disabled selected>Series</option>
+                        </select>
+                    </div>
+                    <div class="custom-select-wrapper col-12 col-sm-6 col-md-4 col-lg-2">
+                        <select class="form-select custom-select" name="division">
+                            <option disabled selected>Division</option>
+                        </select>
+                    </div>
+                    <div class="custom-select-wrapper col-12 col-sm-6 col-md-4 col-lg-2">
+                        <select class="form-select custom-select" name="team">
+                            <option disabled selected>Team</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+          </div>
+          
+            <table class="standings-table" style="margin-top: 20px;" >
+                <thead>
+                    <tr>
+                        <th>Team</th>
+                        <th>MAT</th>
+                        <th>WON</th>
+                        <th>LOST</th>
+                        <th>N/R</th>
+                        <th>TIE</th>
+                        <th>PTS</th>
+                        <th>WIN%</th>
+                        <th>NET RR</th>
+                        <th>FOR</th>
+                        <th>AGAINST</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/edmunds.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                St Edmunds CC
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/ahmadiyya.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Ahmadiyya CC
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/victoria.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Victoria Park Cricket Club
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/torronto.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Torronto Cscc
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/edmunds.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                St Edmunds CC
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/ahmadiyya.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Ahmadiyya CC
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/victoria.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Victoria Park Cricket Club
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/torronto.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Torronto Cscc
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/edmunds.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                St Edmunds CC
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/ahmadiyya.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Ahmadiyya CC
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/victoria.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Victoria Park Cricket Club
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/torronto.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Torronto Cscc
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/torronto.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Torronto Cscc
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/edmunds.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                St Edmunds CC
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="team-cell d-flex align-items-center gap-2">
+                                <img src="/club7ms admin2/images/ahmadiyya.png" alt="St Edmunds Logo" class="team-logo" style="width: 30px; height: 30px; border-radius: 50%;">
+                                Ahmadiyya CC
+                              </div>
+                        </td>
+                        <td>18</td>
+                        <td>12</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>75%</td>
+                        <td>1.0223</td>
+                        <td>1150/112</td>
+                        <td>2256/223</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+  </div>
+  
+
+
+  <script src="js/script.js"></script>
+  
+
+ 
+</body>
+</html>
