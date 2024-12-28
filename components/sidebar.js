@@ -82,18 +82,18 @@ class Sidebar extends HTMLElement {
 
             </div>
             
-             <div  class=" collapsed " data-bs-toggle="collapse" href="#collapse4">
+             <div  class="collapsed " data-bs-toggle="collapse" href="#collapse4">
               <div class="nav-item-sidebar flex-align ${page == 'team-selection' || page == 'schedule-match' ? 'active' : ''}">
                 <div class="flex-align2 g2">
                   <img src="images/match-management.png" >
-                  <h6>Match Management</h6>
+                  <h6>Match Management </h6>
                 </div>
                 <img src="images/arrow-bottom.png" class="arrow-bottom">
               </div>
               <div id="collapse4" class="collapse  ${page == 'team-selection' || page == 'schedule-match' ? 'show' : ''} data-bs-parent="#accordion">
                 
-                <a href="schedule-match.html" class="nav-collapse nav-item-sidebar  ${page == 'schedule-match' ? 'active' : ''}">
-                  <h6>Schedule Match</h6>
+                <a href="calender-view.html" class="nav-collapse nav-item-sidebar  ${page == 'schedule-match' ? 'active' : ''}">
+                  <h6>Calender View</h6>
                 </a>
                 <a href="team-selection.html" class="nav-collapse nav-item-sidebar  ${page == 'team-selection' ? 'active' : ''}">
                   <h6>Team selection &
