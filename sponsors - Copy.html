@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+  <div class="site">
+    <sidebar-component data-page="sponsors"></sidebar-component>
+
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Sponsors</h6>
+        </div>
+        <div class="header-right">
+          <div class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </div>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+
+          </div>
+        </div>
+      </div>
+      <div class="main-section">
+        <div class="flex-align mt-3" style="flex-wrap: wrap; row-gap: 20px;">
+          <div>
+            <h5 class="font-weight-400 text-gray">Sponsors <span class="text-dark font-weight-50">04</span></h5>
+            <h5 class="mt-3">You can rearrange the sponsor ads by clicking and dragging.</h5>
+          </div>
+          <div class="flex-align3 g2" style="flex-wrap:wrap;">
+            <a class="btn btn-outline-club7 g2 px-3" data-bs-toggle="modal" data-bs-target="#assignGround">
+              <img src="images/clock-red.png" style="width: 16px;">
+              Set Time
+            </a>
+            <a  class="btn btn-club7" data-bs-toggle="modal" data-bs-target="#addSponsors">
+              + Add Sponsors
+            </a>
+          </div>
+        
+        </div>
+        <div class="row mt-3">
+          <div class="w-100p-450px">
+            <div class="sponsors-cards">
+              <div class="sponsors-cards-child flex-align3 g3 mb-2">
+                <span>1</span>
+                <div class="sponsors-card flex-align3 g4 w-100 border rounded p-3 pe-4">
+                  <div class="flex-align3 g3 pe-4 mr-3" style="border-right: 1px solid #FFFFFF4D;">
+                    <img src="images/menu2.png" style="width: 20px;">
+                    <img src="images/win.png" style="width: 90px; height:70px;">
+                  </div>
+                  <div class="flex-align g2 w-100">
+                    <div>
+                      <h6 class=" font-weight-500">WIN Sports and Uniforms</h6>
+                      <h6 class="text-gray mt-2">Web address</h6>
+                    </div>
+                    <div class="dropdown">
+                      <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;" aria-expanded="false">
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="sponsors-cards-child flex-align3 g3 mb-2">
+                <span>2</span>
+                <div class="sponsors-card flex-align3 g4 w-100 border rounded p-3 pe-4">
+                  <div class="flex-align3 g3 pe-4 mr-3" style="border-right: 1px solid #FFFFFF4D;">
+                    <img src="images/menu2.png" style="width: 20px;">
+                    <img src="images/forex.png" style="width: 90px; height:70px;">
+                  </div>
+                  <div class="flex-align g2 w-100">
+                    <div>
+                      <h6 class=" font-weight-500">My Forex Funds</h6>
+                      <h6 class="text-gray mt-2">Web address</h6>
+                    </div>
+                    <div class="dropdown">
+                      <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;" aria-expanded="false">
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="sponsors-cards-child flex-align3 g3 mb-2">
+                <span>3</span>
+                <div class="sponsors-card flex-align3 g4 w-100 border rounded p-3 pe-4">
+                  <div class="flex-align3 g3 pe-4 mr-3" style="border-right: 1px solid #FFFFFF4D;">
+                    <img src="images/menu2.png" style="width: 20px;">
+                    <img src="images/lazeez.png" style="width: 90px; height:70px;">
+                  </div>
+                  <div class="flex-align g2 w-100">
+                    <div>
+                      <h6 class=" font-weight-500">Lazeez Shawarma</h6>
+                      <h6 class="text-gray mt-2">Web address</h6>
+                    </div>
+                    <div class="dropdown">
+                      <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;" aria-expanded="false">
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="sponsors-cards-child flex-align3 g3 mb-2">
+                <span>1</span>
+                <div class="sponsors-card flex-align3 g4 w-100 border rounded p-3 pe-4">
+                  <div class="flex-align3 g3 pe-4 mr-3" style="border-right: 1px solid #FFFFFF4D;">
+                    <img src="images/menu2.png" style="width: 20px;">
+                    <img src="images/win.png" style="width: 90px; height:70px;">
+                  </div>
+                  <div class="flex-align g2 w-100">
+                    <div>
+                      <h6 class=" font-weight-500">WIN Sports and Uniforms</h6>
+                      <h6 class="text-gray mt-2">Web address</h6>
+                    </div>
+                    <div class="dropdown">
+                      <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;" aria-expanded="false">
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="sponsors-cards-child flex-align3 g3 mb-2">
+                <span>2</span>
+                <div class="sponsors-card flex-align3 g4 w-100 border rounded p-3 pe-4">
+                  <div class="flex-align3 g3 pe-4 mr-3" style="border-right: 1px solid #FFFFFF4D;">
+                    <img src="images/menu2.png" style="width: 20px;">
+                    <img src="images/forex.png" style="width: 90px; height:70px;">
+                  </div>
+                  <div class="flex-align g2 w-100">
+                    <div>
+                      <h6 class=" font-weight-500">My Forex Funds</h6>
+                      <h6 class="text-gray mt-2">Web address</h6>
+                    </div>
+                    <div class="dropdown">
+                      <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;" aria-expanded="false">
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              <div class="sponsors-cards-child flex-align3 g3 mb-2">
+                <span>3</span>
+                <div class="sponsors-card flex-align3 g4 w-100 border rounded p-3 pe-4">
+                  <div class="flex-align3 g3 pe-4 mr-3" style="border-right: 1px solid #FFFFFF4D;">
+                    <img src="images/menu2.png" style="width: 20px;">
+                    <img src="images/lazeez.png" style="width: 90px; height:70px;">
+                  </div>
+                  <div class="flex-align g2 w-100">
+                    <div>
+                      <h6 class=" font-weight-500">Lazeez Shawarma</h6>
+                      <h6 class="text-gray mt-2">Web address</h6>
+                    </div>
+                    <div class="dropdown">
+                      <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;" aria-expanded="false">
+                      <ul class="dropdown-menu" >
+                        <li><a class="dropdown-item">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="w-450px">
+            <h5 class="font-weight-600">Sponsors logo in mobile </h5>
+            <div class="mob-screen mt-5">
+              <img src="images/mob-mockup.png" class="mob-mockup">
+              <div class="mob-screen-container">
+                
+                <div class="flex-align g2 pt-4 px-4">
+                  <img src="images/club7-text.png" style="width: 120px;">
+                  <!-- <div class="flex-align3 g3">
+                    <img src="images/chat.png" style="width: 20px;">
+                    <img src="images/bell.png" style="width: 20px;">
+                  </div> -->
+                </div>
+                <div class="mob-body">
+                  <h6 class="font-weight-400 text-gray mb-3">Sponsors</h6>
+                
+               
+
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
+
+                    </ol>
+
+                   <style>
+                        .carousel-indicators {
+                          bottom: -40px;
+                      }
+                      .carousel-indicators li {
+
+                       background-color: #C3282E80;
+                       border: 1px solid #C3282E80;
+                      
+                       margin: 3px;
+                      }
+
+                    .carousel-indicators .active {
+
+                        background-color: #C3282E;
+                        margin: 3px;
+                        width: 10px;
+                       height: 10px;
+                    }
+
+                   </style>
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images/mob-banner.png" style="width:100%;">
+                      </div>
+
+                      <div class="item">
+                        <img src="images/mob-banner.png" style="width:100%;">
+
+                      </div>
+                    
+                      <div class="item">
+                        <img src="images/mob-banner.png" style="width:100%;">
+
+                      </div>
+                      <div class="item">
+                        <img src="images/mob-banner.png" style="width:100%;">
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <style type="text/css">
+
+                   .carousel {
+                     height: 300px;
+                     width: 400px;
+                     overflow: hidden;
+                     text-align: center;
+                     position: relative;
+                     padding: 0;
+                     list-style: none;
+                  
+                   }
+                   .carousel__controls,
+                   .carousel__activator {
+                     display: none;
+                   }
+                   .carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+                     transform: translateX(0%);
+                   }
+                   .carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+                     transition: opacity 0.5s, transform 0.5s;
+                     top: 0;
+                     left: 0;
+                     right: 0;
+                     opacity: 1;
+                     transform: scale(1);
+                   }
+                   .carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+                     display: block;
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+                     transform: translateX(-100%);
+                   }
+                   .carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+                     transition: opacity 0.5s, transform 0.5s;
+                     top: 0;
+                     left: 0;
+                     right: 0;
+                     opacity: 1;
+                     transform: scale(1);
+                   }
+                   .carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+                     display: block;
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+                     transform: translateX(-200%);
+                   }
+                   .carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+                     transition: opacity 0.5s, transform 0.5s;
+                     top: 0;
+                     left: 0;
+                     right: 0;
+                     opacity: 1;
+                     transform: scale(1);
+                   }
+                   .carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+                     display: block;
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+                     transform: translateX(-300%);
+                   }
+                   .carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+                     transition: opacity 0.5s, transform 0.5s;
+                     top: 0;
+                     left: 0;
+                     right: 0;
+                     opacity: 1;
+                     transform: scale(1);
+                   }
+                   .carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+                     display: block;
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+                     transform: translateX(-400%);
+                   }
+                   .carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+                     transition: opacity 0.5s, transform 0.5s;
+                     top: 0;
+                     left: 0;
+                     right: 0;
+                     opacity: 1;
+                     transform: scale(1);
+                   }
+                   .carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+                     display: block;
+                     opacity: 1;
+                   }
+                   .carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+                     opacity: 1;
+                   }
+                   .carousel__control {
+                     height: 30px;
+                     width: 30px;
+                     margin-top: -15px;
+                     top: 50%;
+                     position: absolute;
+                     display: block;
+                     cursor: pointer;
+                     border-width: 5px 5px 0 0;
+                     border-style: solid;
+                     border-color: #fafafa;
+                     opacity: 0.35;
+                     outline: 0;
+                     z-index: 3;
+                   }
+                   .carousel__control:hover {
+                     opacity: 1;
+                   }
+                   .carousel__control--backward {
+                     left: 10px;
+                     transform: rotate(-135deg);
+                   }
+                   .carousel__control--forward {
+                     right: 10px;
+                     transform: rotate(45deg);
+                   }
+                   .carousel__indicators {
+                     position: absolute;
+                     bottom: 20px;
+                     width: 100%;
+                     text-align: center;
+                   }
+                   .carousel__indicator {
+                     height: 15px;
+                     width: 15px;
+                     border-radius: 100%;
+                     display: inline-block;
+                     z-index: 2;
+                     cursor: pointer;
+                     opacity: 0.35;
+                     margin: 0 2.5px 0 2.5px;
+                   }
+                   .carousel__indicator:hover {
+                     opacity: 0.75;
+                   }
+                   .carousel__track {
+                     position: absolute;
+                     top: 0;
+                     right: 0;
+                     bottom: 0;
+                     left: 0;
+                     padding: 0;
+                     margin: 0;
+                     transition: transform 0.5s ease 0s;
+                   }
+                   .carousel__track .carousel__slide {
+                     display: block;
+                     top: 0;
+                     left: 0;
+                     right: 0;
+                     opacity: 1;
+                   }
+                   .carousel__track .carousel__slide:nth-of-type(1) {
+                     transform: translateX(0%);
+                   }
+                   .carousel__track .carousel__slide:nth-of-type(2) {
+                     transform: translateX(100%);
+                   }
+                   .carousel__track .carousel__slide:nth-of-type(3) {
+                     transform: translateX(200%);
+                   }
+                   .carousel__track .carousel__slide:nth-of-type(4) {
+                     transform: translateX(300%);
+                   }
+                   .carousel__track .carousel__slide:nth-of-type(5) {
+                     transform: translateX(400%);
+                   }
+                   .carousel--scale .carousel__slide {
+                     transform: scale(0);
+                   }
+                   .carousel__slide {
+                     height: 100%;
+                     position: absolute;
+                     overflow-y: auto;
+                     opacity: 0;
+                   }
+                  
+                   .carousel-container {
+                     display: inline-block;
+                   }
+                   .my-carousel {
+                     border-radius: 5px;
+                     margin: 30px;
+                   }
+                   .carousel__slide {
+                     overflow: hidden;
+                   }
+                   .carousel--thumb .carousel__indicator {
+                     height: 30px;
+                     width: 30px;
+                   }
+                 
+                   .carousel__indicator {
+                     background-color: #fafafa;
+                   }
+
+                   
+                   </style>
+                  <div class="carousel my-carousel carousel--translate">
+                    <input class="carousel__activator" type="radio" name="carousel" id="F" checked="checked"/>
+                    <input class="carousel__activator" type="radio" name="carousel" id="G"/>
+                    <input class="carousel__activator" type="radio" name="carousel" id="H"/>
+                    <input class="carousel__activator" type="radio" name="carousel" id="I"/>
+                    <input class="carousel__activator" type="radio" name="carousel" id="J"/>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="J"></label>
+                      <label class="carousel__control carousel__control--forward" for="G"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="F"></label>
+                      <label class="carousel__control carousel__control--forward" for="H"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="G"></label>
+                      <label class="carousel__control carousel__control--forward" for="I"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="H"></label>
+                      <label class="carousel__control carousel__control--forward" for="J"></label>
+                    </div>
+                    <div class="carousel__controls">
+                      <label class="carousel__control carousel__control--backward" for="I"></label>
+                      <label class="carousel__control carousel__control--forward" for="F"></label>
+                    </div>
+                    <div class="carousel__track">
+                      <li class="carousel__slide">
+                        <img src="images/mob-banner.png">
+                      </li>
+                      <li class="carousel__slide">
+                        <img src="images/mob-banner.png">
+                      </li>
+                      <li class="carousel__slide">
+                        <img src="images/mob-banner.png">
+                      </li>
+                      <li class="carousel__slide">
+                        <img src="images/mob-banner.png">
+                      </li>
+                   
+                    </div>
+                    <div class="carousel__indicators">
+                      <label class="carousel__indicator" for="F"></label>
+                      <label class="carousel__indicator" for="G"></label>
+                      <label class="carousel__indicator" for="H"></label>
+                      <label class="carousel__indicator" for="I"></label>
+
+                    </div>
+                  </div>
+                  <h6 class="font-weight-400 text-gray mt-5 mb-3">My dashboard</h6>
+                  <div class="row" style="row-gap: 20px;">
+                    <div class="col-6">
+                      <div class="card mockup-card">
+                        <div class="mob-card-img">
+                          <img src="images/club-matches.png">
+                        </div>
+                        <h6 class="font-weight-600 mt-1 text-center">Club Matches </h6>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card mockup-card">
+                        <div class="mob-card-img">
+                          <img src="images/schedule-match.png">
+                        </div>
+                        <h6   class="font-weight-600 mt-1 text-center">My Schedule</h6>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card mockup-card">
+                        <div class="mob-card-img">
+                          <img src="images/stats-match.png">
+                        </div>
+                        <h6 class="font-weight-600 mt-1 text-center">My stats </h6>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card mockup-card">
+                        <div class="mob-card-img">
+                          <img src="images/club-executive-matches.png">
+                        </div>
+                        <h6 class="font-weight-600 mt-1 text-center">Club Executives</h6>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card mockup-card">
+                        <div class="mob-card-img">
+                          <img src="images/payment-matches.png">
+                        </div>
+                        <h6 class="font-weight-600 mt-1 text-center">Payment</h6>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card mockup-card">
+                        <div class="mob-card-img">
+                          <img src="images/club-document-matches.png">
+                        </div>
+                        <h6 class="font-weight-600 mt-1 text-center">Club documents</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="background-color: #C3282E26; height: 1px; width: 100%; margin: 20px 0;"></div>
+                  <div class="row" style="row-gap: 20px;">
+                    <div class="col-6">
+                      <h6 class="font-weight-400 text-gray mb-3">Admin login</h6>
+
+                      <div class="card mockup-card">
+                        <img src="images/login.png" style="height: 40px; width: 70px; object-fit:contain; margin:0 auto;">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                      <h6 class="font-weight-400 text-gray mb-3">Better Coaching</h6>
+
+                      <div class="card mockup-card">
+                          <img src="images/hwzthat.png" style="height: 40px; width: 100px; object-fit:contain; margin:0 auto;">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="mob-footer">
+                  <div class="row">
+                    <div class="col-3">
+                      <img src="images/home.png">
+                      <h6 class="font-weight-600">Home</h6>
+                    </div>
+                    <div class="col-3">
+                      <img src="images/Events.png">
+                      <h6>Events & News</h6>
+                    </div>
+                    <div class="col-3">
+                      <img src="images/Ecommerse.png">
+                      <h6>Ecommerce</h6>
+                    </div>
+                    <div class="col-3">
+                      <img src="images/profile.png">
+                      <h6>Profile</h6>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="addSponsors" tabindex="-1" aria-labelledby="addSponsorsLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom">
+              <h3>Add Sponsors</h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2 p-md-3 p-0">
+              
+              <div class="row mt-3" style="row-gap: 20px;">
+                    <div class="col-lg-4 col-md-6 col-item" style="padding-right: 20px;">
+                      <h5 class="font-weight-500 mb-2">Sponsors Logo</h5>
+                      <div class="image-picker image-picker2" style="height: 150px;">
+                        <input type="file" accept="image/*" class="input w-100">
+                        <div class="image-picker-tab">
+                          <img src="images/upload3.png">
+                          Upload image
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-12 col-item">
+                      <div class="mb-4">
+                        <h5 class="font-weight-500 mb-2">Sponsor name</h5>
+                        <input type="type" value="Jan 12, 2024" name="" class="input w-100">
+                      </div>
+                      <div>
+                        <h5 class="font-weight-500 mb-2">Sponsor web address</h5>
+                        <input type="type" value="Http//:" name="" class="input w-100">
+                      </div>
+                      <label class="flex-align3 g2 mt-4">
+                        <input id="sponsors" type="checkbox" style="accent-color: red;">
+                        <h5 class="font-weight-600 text-dark">Highlight sponsor </h5>
+                      </label>
+                    </div>
+
+                    
+                    
+                    
+              </div>
+              <div class="modal-footer2 d-flex justify-content-end g2 mt-5">
+                <button type="button" class="btn btn-club7 px-4">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

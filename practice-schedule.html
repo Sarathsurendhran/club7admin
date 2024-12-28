@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component data-page="practice-schedule"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Daily Practice schedule</h6>
+        </div>
+        <div class="header-right">
+          <div class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </div>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2" >
+        <div class="filter-bar">
+              <div class="input-group1">
+                <div class="search">
+                  <input type="text" placeholder="Search by title" name="search" class="input" style="min-width: 280px;">
+                  <img src="images/search.png">
+                </div>
+                <select class="select-input" style="min-width: 150px;">
+                  <option>status</option>
+                </select>
+              </div>
+              <div class="flex-align3 g2" style="flex-wrap:wrap;">
+                <a class="btn btn-outline-club7" data-bs-toggle="modal" data-bs-target="#assignGround">
+                  View/ Assign Ground 
+                </a>
+                <a href="schedule-practice.html" class="btn btn-club7">
+                  <img src="images/add.png">
+                  Schedule Practice
+                </a>
+              </div>
+        </div>
+        <div class="row mx-0 mt-3" style="row-gap:25px;">
+              <div class="col-xl-6 ps-0 pe-0 pe-xl-2">
+                <div class="row mb-2">
+                  <div class="col-12 col-item py-0">
+                    <h5 class="font-weight-500 text-4">Scheduled Practice <span class="font-weight-400"> 06</span></h5>
+                  </div>
+                </div>
+                <div class="table-sec" style="max-height: calc(100vh - 290px);overflow: auto;">
+                  <table class="table1">
+                    <thead>
+                      <tr>
+                        <th>
+                          Practice Title
+                        </td>
+                        <th>
+                          Category
+                        </th>
+                        <th >
+                          Duration
+                        </th>
+                        <th >
+                          Status
+                        </td>
+                        <th >
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="active">
+                        <td>
+                          PRACTICE U12
+                        </td>
+                        <td>
+                          Senior Team
+                        </td>
+                        <td >
+                          Aug 05 - Oct 02, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Test Cricket Mub
+                        </td>
+                        <td>
+                          3rd Division
+                        </td>
+                        <td >
+                          Aug 16 - Sep 02, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Bowling practice
+                        </td>
+                        <td>
+                        2nd Division
+                        </td>
+                        <td >
+                          Aug 16 - Sep 02, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Bowling practice
+                        </td>
+                        <td>
+                          3rd Division
+                        </td>
+                        <td >
+                          Aug 16 - Sep 02, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Test Cricket Mub
+                        </td>
+                        <td>
+                          Premier-Gold
+                        </td>
+                        <td >
+                          Aug 16 - Sep 02, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      
+                      <tr>
+                        <td>
+                           Test Cricket Mub
+                        </td>
+                        <td>
+                         Premier-Gold
+                        </td>
+                        <td >
+                         Aug 05 - Oct 02, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-danger text-danger">Expired</badge>
+                        </td>
+                        <td>
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+              </div>
+              <div class="col-xl-6  pe-0 ps-xl-3 ps-0">
+                <div class="row mb-2">
+                  <div class="col-12 col-item py-0">
+                    <h5 class="font-weight-500 text-4">Players List</h5>
+                  </div>
+                </div>
+                <div class="card-2 p-0" style="min-height: calc(100vh - 140px);">
+                  <div class="card-2-head d-flex justify-content-between g2 p-3" style="flex-wrap:wrap;row-gap:10px;">
+                    <div class="text-start">
+                      <h5 class="font-weight-500">PRACTICE U12</h5>
+                      <h5 class="font-weight-500 pt-1 text-success">Active</h5>
+                    </div>
+                    <div class="text-start d-flex align-items-end">
+                        <div class="pe-3 d-flex align-items-end direction-column">
+                          <div class="text-start flex-align3 g3">
+                            <h5 class="font-weight-500">Aug 05- Oct 05, 2023</h5>
+                            <h5 class="font-weight-500">|  11:00 AM</h5>
+                          </div>
+                          <h5 class="font-weight-500 pt-1">huron heights</h5>
+                        </div>
+                        <img src="images/edit.png" style="width:12px;height:12px;object-fit: contain;">
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="card-2-body text-start">
+                    <div class="table-sec2" >
+                          <table class="table1">
+                            <thead>
+                              <tr>
+                                <th>
+                                  Players
+                                </td>
+                                <th>
+                                 Age
+                                </th>
+                                <th >
+                                  Player type
+                                </th>
+                                <th >
+                                  Decision
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                                <td>
+                                  <badge class="badge bg-soft-success text-success">Available</badge>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user2.png" class="user-dp3">
+                                    <h5 class="">Sarah Villiams</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 23
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                                <td>
+                                  <badge class="badge bg-soft-danger text-danger">Not Available</badge>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user3.png" class="user-dp3">
+                                    <h5 class="">Jessica wilson</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                                <td>
+                                  <badge class="badge bg-soft-success text-success">Available</badge>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user4.png" class="user-dp3">
+                                    <h5 class="">Robert Jons</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                                <td>
+                                  <badge class="badge badge-soft-warning">Pending</badge>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                                <td>
+                                  <badge class="badge bg-soft-success text-success">Available</badge>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user2.png" class="user-dp3">
+                                    <h5 class="">Sarah Villiams</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 23
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                                <td>
+                                  <badge class="badge bg-soft-danger text-danger">Not Available</badge>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user3.png" class="user-dp3">
+                                    <h5 class="">Jessica wilson</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                                <td>
+                                  <badge class="badge bg-soft-success text-success">Available</badge>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user4.png" class="user-dp3">
+                                    <h5 class="">Robert Jons</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                                <td>
+                                  <badge class="badge badge-soft-warning">Pending</badge>
+                                </td>
+                              </tr>
+                 
+
+                            </tbody>
+                          </table>
+                        </div>
+                  </div>
+                  
+                </div>
+              </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- modals start -->
+
+  <div class="modal fade" id="assignGround" tabindex="-1" aria-labelledby="assignGroundLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+       <!--  <div class="modal-header">
+          <h5 class="modal-title" id="assignGroundLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body p-4">
+            <div class="flex-align moadl-head2 pb-4">
+              <h3>View/ Assign Ground </h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2" style="width: 340px;margin: 0 auto;">
+              <div class="table-sec">
+              <table class="table1">
+                <thead>
+                  <tr>
+                    <th>Day</th>
+                    <th>Category</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td>
+                      <select class="select-input padding-0" style="min-width: 150px;">
+                        <option selected>U18</option>
+                        <option>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>
+                       <select class="select-input padding-0" style="min-width: 150px;">
+                        <option>U18</option>
+                        <option selected>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>
+                      <select class="select-input padding-0" style="min-width: 150px;">
+                        <option>U18</option>
+                        <option selected>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>
+                      <select class="select-input padding-0" style="min-width: 150px;">
+                        <option>U18</option>
+                        <option>Senior Team</option>
+                        <option selected>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>
+                      <select class="select-input padding-0" style="min-width: 150px;">
+                        <option>U18</option>
+                        <option>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option selected>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>
+                      <select class="select-input padding-0" style="min-width: 150px;">
+                        <option>U18</option>
+                        <option>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option selected>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>
+                      <select class="select-input padding-0" style="min-width: 150px;">
+                        <option>U18</option>
+                        <option>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option selected>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+              <div class="modal-footer2 d-flex justify-content-end g2 py-3">
+                <button type="button" class="btn btn-outline-club7 px-5" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-club7 px-5 disable">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

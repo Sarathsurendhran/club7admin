@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component data-page="schedule-match"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Schedule Match</h6>
+        </div>
+        <div class="header-right">
+          <div class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </div>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2" >
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="schedule_match-tab" data-bs-toggle="tab" data-bs-target="#schedule_match" type="button" role="tab" aria-controls="schedule_match" aria-selected="true">SSchedule Practice Matches</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="club_match-tab" data-bs-toggle="tab" data-bs-target="#club_match" type="button" role="tab" aria-controls="club_match" aria-selected="false">Club / League Matches</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="schedule_match" role="tabpanel" aria-labelledby="schedule_match-tab">
+            <div class="filter-bar mt-3">
+              <div class="input-group1">
+                <div class="search">
+                  <input type="text" placeholder="Search by title" name="search" class="input" style="min-width: 280px;">
+                  <img src="images/search.png">
+                </div>
+                <select class="select-input" style="min-width: 150px;">
+                  <option>status</option>
+                </select>
+              </div>
+              <a href="schedule-new-match.html" class="btn btn-club7">
+                <img src="images/add.png">
+                Schedule new match
+              </a>
+            </div>
+            <div class="row mx-0 mt-3" style="row-gap:25px;">
+              <div class="col-xl-6 ps-0 pe-0 pe-xl-2">
+                <div class="row mb-2">
+                  <div class="col-12 col-item py-0">
+                    <h5 class="font-weight-500 text-4">Scheduled Matches <span class="font-weight-400"> 06</span></h5>
+                  </div>
+                </div>
+                <div class="table-sec" style="overflow: auto;">
+                  <table class="table1">
+                    <thead>
+                      <tr>
+                        <th>
+                          Title
+                        </td>
+                        <th>
+                          Team
+                        </th>
+                        <th >
+                          Date
+                        </th>
+                        <th >
+                          Status
+                        </td>
+                        <th >
+                          
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="active">
+                        <td>
+                          20 20
+                        </td>
+                        <td>
+                          3rd Division
+                        </td>
+                        <td >
+                          Aug 05 MON, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown" >
+                            <img src="images/dots.png" class="dropdown-toggle" type="button"  data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu" >
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          20 20
+                        </td>
+                        <td>
+                          2nd Division
+                        </td>
+                        <td >
+                          Aug 05 MON, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown" >
+                            <img src="images/dots.png" class="dropdown-toggle" type="button"  data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu" >
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          T 20
+                        </td>
+                        <td>
+                          3rd Division
+                        </td>
+                        <td >
+                          Aug 05 MON, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown" >
+                            <img src="images/dots.png" class="dropdown-toggle" type="button"  data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu" >
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          T 20
+                        </td>
+                        <td>
+                          Premier-Gold
+                        </td>
+                        <td >
+                          Aug 05 MON, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-danger text-danger">Expired</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown" >
+                            <img src="images/dots.png" class="dropdown-toggle" type="button"  data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu" >
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          T 20
+                        </td>
+                        <td>
+                          Premier-Gold
+                        </td>
+                        <td >
+                          Aug 05 MON, 2023
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-danger text-danger">Expired</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown" >
+                            <img src="images/dots.png" class="dropdown-toggle" type="button"  data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu" >
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                </div>
+                
+              </div>
+              <div class="col-xl-6  pe-0 ps-xl-3 ps-0">
+                <div class="row mb-2">
+                  <div class="col-12 col-item py-0">
+                    <h5 class="font-weight-500 text-4">Players Availability</h5>
+                  </div>
+                </div>
+                <div class="card-2 p-0">
+                  <div class="card-2-head d-flex justify-content-between g2 p-3" style="flex-wrap:wrap;row-gap:10px; align-items: flex-end;">
+                    <div class="text-start">
+                      <h5 class="font-weight-500">T 20</h5>
+                      <h5 class="font-weight-500 pt-1">Aug 05- Oct 05, 2023 |  11:00 AM</h5>
+                    </div>
+                    <div class="text-start flex-align3 g3">
+                      <h5 class="font-weight-500">Huron heights</h5>
+                      <img src="images/edit.png" style="width:12px;height:12px;object-fit: contain;">
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="card-2-body text-start mt-2">
+                    <nav>
+                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active w-50 m-0" id="nav-team-1-tab" data-bs-toggle="tab" data-bs-target="#nav-team-1" type="button" role="tab" aria-controls="nav-team-1" aria-selected="true">Team 1</button>
+                        <button class="nav-link w-50 m-0" id="nav-team-2-tab" data-bs-toggle="tab" data-bs-target="#nav-team-2" type="button" role="tab" aria-controls="nav-team-2" aria-selected="false">Team 2</button>
+                      </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-team-1" role="tabpanel" aria-labelledby="nav-team-1-tab">
+                        <div class="table-sec2" >
+                          <table class="table1">
+                            <thead>
+                              <tr>
+                                <th>
+                                  Players
+                                </td>
+                                <th>
+                                 Age
+                                </th>
+                                <th >
+                                  Player type
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="nav-team-2" role="tabpanel" aria-labelledby="nav-team-2-tab">
+                        <div class="table-sec2" >
+                          <table class="table1">
+                            <thead>
+                              <tr>
+                                <th>
+                                  Players
+                                </td>
+                                <th>
+                                 Age
+                                </th>
+                                <th >
+                                  Player type
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="flex-align3 g2">
+                                    <img src="images/user1.png" class="user-dp3">
+                                    <h5 class="">David Davis</h5>
+                                  </div>
+                                </td>
+                                <td>
+                                 25
+                                </td>
+                                <td >
+                                  Batting
+                                </td>
+                              </tr>
+                              
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="club_match" role="tabpanel" aria-labelledby="club_match-tab">
+            <div class="filter-bar mt-3">
+              <div class="input-group1">
+                <div class="search">
+                  <input type="text" placeholder="Search by title" name="search" class="input" style="min-width: 280px;">
+                  <img src="images/search.png">
+                </div>
+                <select class="select-input" style="min-width: 150px;">
+                  <option>status</option>
+                </select>
+              </div>
+              <div class="btn btn-club7">
+                <img src="images/upload.png" style="width:20px;" class="mr-2">
+                Upload File
+              </div>
+            </div>
+            <div class="club-matches mt-3">
+              <div class="row mb-2">
+                  <div class="col-12 col-item py-0">
+                    <h5 class="font-weight-500 text-4">Scheduled Matches <span class="font-weight-400"> 06</span></h5>
+                  </div>
+                </div>
+                <div class="table-sec" >
+                  <table class="table1">
+                    <thead>
+                      <tr>
+                        <th>
+                          Title
+                        </td>
+                        <th>
+                          Team 1 Name
+                        </th>
+                        <th >
+                          Team 2 Name
+                        </th>
+                        <th >
+                          Date
+                        </th>
+                        <th >
+                          Time
+                        </th>
+                        <th >
+                          Venue
+                        </th>
+                        <th >
+                          Status
+                        </td>
+                        <th >
+                          Action
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="active">
+                        <td>
+                          T 20
+                        </td>
+                        <td>
+                          Team B
+                        </td>
+                        <td >
+                          Team C
+                        </td>
+                        <td >
+                          Jan 26, 2023
+                        </td>
+                        <td >
+                          11:30 AM
+                        </td>
+                        <td >
+                          Mississauga
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          20 20
+                        </td>
+                        <td>
+                          Team D
+                        </td>
+                        <td >
+                          Team A
+                        </td>
+                        <td >
+                          Jan 26, 2023
+                        </td>
+                        <td >
+                          11:30 AM
+                        </td>
+                        <td >
+                          Mississauga
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          20 20
+                        </td>
+                        <td>
+                          Team F
+                        </td>
+                        <td >
+                          Team G
+                        </td>
+                        <td >
+                          Jan 26, 2023
+                        </td>
+                        <td >
+                          11:30 AM
+                        </td>
+                        <td >
+                          Mississauga
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          T 20
+                        </td>
+                        <td>
+                          Team F
+                        </td>
+                        <td >
+                          Team N
+                        </td>
+                        <td >
+                          Jan 26, 2023
+                        </td>
+                        <td >
+                          11:30 AM
+                        </td>
+                        <td >
+                          Mississauga
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          T 20
+                        </td>
+                        <td>
+                          Team D
+                        </td>
+                        <td >
+                          Team A
+                        </td>
+                        <td >
+                          Jan 26, 2023
+                        </td>
+                        <td >
+                          11:30 AM
+                        </td>
+                        <td >
+                          Mississauga
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-danger text-danger">Expired</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          T 20
+                        </td>
+                        <td>
+                          Team B
+                        </td>
+                        <td >
+                          Team A
+                        </td>
+                        <td >
+                          Jan 26, 2023
+                        </td>
+                        <td >
+                          11:30 AM
+                        </td>
+                        <td >
+                          Mississauga
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-danger text-danger">Expired</badge>
+                        </td>
+                        <td >
+                          <div class="dropdown">
+                            <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Delete</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

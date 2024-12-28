@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component data-page="members"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Members</h6>
+        </div>
+        <div class="header-right">
+          <div class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </div>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2" >
+        <div class="filter-bar">
+          <div class="input-group1">
+            <div class="search">
+              <input type="text" placeholder="search by name" name="search" class="input" style="min-width: 280px;">
+              <img src="images/search.png">
+            </div>
+            <select class="select-input" style="min-width: 150px;">
+              <option>status</option>
+            </select>
+            <select class="select-input" style="min-width: 150px;">
+              <option>Role Title</option>
+            </select>
+            <!-- also dropdown option is here -->
+
+            <!-- <div class="dropdown" >
+              <div class="dropdown-btn dropdown-toggle" type="button"  data-bs-toggle="dropdown"  style="min-width: 150px;">
+                status
+              </div>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="#">status 1</a></li>
+                <li><a class="dropdown-item" href="#">status 2</a></li>
+              </ul>
+            </div> -->
+            
+          </div>
+          <div class="btn btn-club7" data-bs-toggle="modal" data-bs-target="#addMember">
+            <img src="images/add.png" class="me-2">
+            Add New  Member
+          </div>
+        </div>
+        <div class="row mx-0 mt-3">
+          <div class="col-xl-6  p-0">
+            <div class="row members">
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1 active">
+                  <img src="images/user1.png">
+                  <h5 class="ellipsis">Anna Lee</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user2.png">
+                  <h5 class="ellipsis">Chris Anderson</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user3.png">
+                  <h5 class="ellipsis">Olivia Martinez</h5>
+                  <h6>President</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user4.png">
+                  <h5 class="ellipsis">Mike Taylor</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user5.png">
+                  <h5 class="ellipsis">Sarah Wilson</h5>
+                  <h6>Secretary</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user6.png">
+                  <h5 class="ellipsis">Alex Davis</h5>
+                  <h6>Club Captain</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user7.png">
+                  <h5 class="ellipsis">Emily Brown</h5>
+                  <h6>Secretary</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user8.png">
+                  <h5 class="ellipsis">Max Johnson</h5>
+                  <h6>Social Director</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user1.png">
+                  <h5 class="ellipsis">Anna Lee</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user2.png">
+                  <h5 class="ellipsis">Chris Anderson</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user3.png">
+                  <h5 class="ellipsis">Olivia Martinez</h5>
+                  <h6>President</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user4.png">
+                  <h5 class="ellipsis">Mike Taylor</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user5.png">
+                  <h5 class="ellipsis">Sarah Wilson</h5>
+                  <h6>Secretary</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user6.png">
+                  <h5 class="ellipsis">Alex Davis</h5>
+                  <h6>Club Captain</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user7.png">
+                  <h5 class="ellipsis">Emily Brown</h5>
+                  <h6>Secretary</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user8.png">
+                  <h5 class="ellipsis">Max Johnson</h5>
+                  <h6>Social Director</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user1.png">
+                  <h5 class="ellipsis">Anna Lee</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user2.png">
+                  <h5 class="ellipsis">Chris Anderson</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user3.png">
+                  <h5 class="ellipsis">Olivia Martinez</h5>
+                  <h6>President</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user4.png">
+                  <h5 class="ellipsis">Mike Taylor</h5>
+                  <h6>Member</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user5.png">
+                  <h5 class="ellipsis">Sarah Wilson</h5>
+                  <h6>Secretary</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user6.png">
+                  <h5 class="ellipsis">Alex Davis</h5>
+                  <h6>Club Captain</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user7.png">
+                  <h5 class="ellipsis">Emily Brown</h5>
+                  <h6>Secretary</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-4 col-6 col-item">
+                <div class="card-1">
+                  <img src="images/user8.png">
+                  <h5 class="ellipsis">Max Johnson</h5>
+                  <h6>Social Director</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6  pe-0 ps-xl-3 ps-0">
+            <div class="card mt-1 p-0" >
+              <div class="card-2-head flex-align p-3" style="flex-wrap:wrap;row-gap:10px;">
+                <div class="flex-align3 g2">
+                  <img src="images/user1.png">
+                  <div class="text-start">
+                    <div class="flex-align3 g2">
+                      <h3>Anna Lee</h3>
+                      <badge class="badge bg-soft-success text-success">Active</badge>
+                    </div>
+                    <h6>Member</h6>
+                  </div>
+                </div>
+                <div class="flex-align3 g2">
+                  <div class="btn btn-club72"  data-bs-toggle="modal" data-bs-target="#roleChange">
+                    Change Role
+                  </div>
+                  <div class="dropdown" >
+                    <img src="images/dots.png" class="dropdown-toggle" type="button"  data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                    <ul class="dropdown-menu" >
+                      <li><a class="dropdown-item" href="#">Edit</a></li>
+                      <li><a class="dropdown-item" href="#">Delete</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <hr class="m-0">
+              <div class="card-2-body text-start p-3 mt-2">
+                <div>
+                  <h4>Personal Information</h4>
+                  <div class="row mt-3">
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Club</h5>
+                      <h5 class="font-weight-500 pt-1" >club7</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Email</h5>
+                      <h5 class="font-weight-500 pt-1" >rayssport.com</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Phone</h5>
+                      <h5 class="font-weight-500 pt-1" >6473249731</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Gender</h5>
+                      <h5 class="font-weight-500 pt-1" >Male</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>DOB</h5>
+                      <h5 class="font-weight-500 pt-1" >12-01-2005</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Fee Due Date</h5>
+                      <h5 class="font-weight-500 pt-1" >08-08-2023</h5>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <div>
+                  <h4>Cric Information</h4>
+                  <div class="row mt-3">
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Batting Style</h5>
+                      <h5 class="font-weight-500 pt-1" >Right Hand</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Bowling Style</h5>
+                      <h5 class="font-weight-500 pt-1" >Right Arm Fast/Medium</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Fielding Position</h5>
+                      <h5 class="font-weight-500 pt-1" >Wicket Keeper</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Scoring Applications</h5>
+                      <h5 class="font-weight-500 pt-1" >---</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>CricClub</h5>
+                      <h5 class="font-weight-500 pt-1" >CLUB02320231033</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Age Group</h5>
+                      <h5 class="font-weight-500 pt-1" >Under 30</h5>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5>Team category</h5>
+                      <h5 class="font-weight-500 pt-1" >Senior, social</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modals start -->
+  <div class="modal fade" id="roleChange" tabindex="-1" aria-labelledby="roleChangeLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="roleChangeLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom">
+              <h3>Add/ Edit Role Title</h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2" style="width: 300px;margin: 0 auto;">
+              <div class="flex-align3 g2 my-4">
+                    <img src="images/user1.png" class="user-dp">
+                    <div class="text-start">
+                      <div class="flex-align3 g2">
+                        <h3>Anna Lee</h3>
+                      </div>
+                      <h6>Member</h6>
+                    </div>
+              </div>
+              <div class="my-4 pt-2">
+                <h4 class="font-weight-500 mb-2">Role Tile</h4>
+                <select class="select-input w-100" style="min-width: 150px;">
+                  <option>Member</option>
+                  <option>President</option>
+                </select>
+              </div>
+              <div class="modal-footer2 flex-align2 g2 p-3">
+                <!-- <button type="button" class="btn btn-outline-club7 w-50" data-bs-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-club7 w-50">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="addMember" tabindex="-1" aria-labelledby="addMemberLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="roleChangeLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom">
+              <h3>Add/ Edit Member Personal info.</h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2 p-md-3 p-0">
+              <div class="add-image-sec ">
+                  <img src="images/user-dp.png" class="user-dp">
+                  <div class="file-choose">
+                    <img src="images/add-image.png" class="add-image" >
+                    <input type="file" name="" class="cursor-pointer">
+                  </div>
+              </div>
+              <div class="row mt-3">
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Club</h5>
+                      <select class="select-input w-100" style="min-width: 150px;">
+                        <option>Select Club</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">First Name</h5>
+                      <input type="type" placeholder="Enter First Name" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Last Name</h5>
+                      <input type="type" placeholder="Enter Last Name" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Gender</h5>
+                      <select class="select-input w-100" style="min-width: 150px;">
+                        <option>Select</option>
+                        <option>male</option>
+                        <option>Female</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Date of birth</h5>
+                      <input type="date" placeholder="Enter Last Name" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Email</h5>
+                      <input type="type" placeholder="Enter Email" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Country Code</h5>
+                      <input type="type" inputmode="numeric" placeholder="Enter Country Code" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Phone Number</h5>
+                      <input type="type" inputmode="numeric" placeholder="Enter Phone Number" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Emergency Contact Name</h5>
+                      <input type="type"  placeholder="Enter Emergency Contact Name" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Emergency Contact Number</h5>
+                      <input type="type" inputmode="numeric" placeholder="Enter Emergency Contact Number" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Address Line 1</h5>
+                      <input type="type" placeholder="Enter Address" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Address Line 2</h5>
+                      <input type="type" placeholder="Enter Address" name="" class="input w-100">
+                    </div>
+                    <div class="col-md-4 col-item py-2">
+                      <h5 class="font-weight-500 mb-1">Status</h5>
+                      <select class="select-input w-100" style="min-width: 150px;">
+                        <option>status</option>
+                      </select>
+                    </div>
+              </div>
+              <div class="modal-footer2 d-flex justify-content-end g2 pt-3">
+                <!-- <button type="button" class="btn btn-outline-club7 px-5" data-bs-dismiss="modal">Close</button> -->
+                <button type="button" class="btn btn-club7 px-5">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
