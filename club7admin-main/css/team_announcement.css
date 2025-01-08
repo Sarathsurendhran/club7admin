@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(58, 58, 58);
+  /* font-family: Arial, sans-serif; */
+}
+.matchManagement_nav {
+  margin: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+.matchManagement_nav a {
+  color: rgb(141, 138, 138);
+}
+
+.matchManagement_nav a i {
+  margin-left: 5px;
+  color: green;
+}
+.circle-ellipsis {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px; /* Adjust size */
+  height: 18px;
+  border: 2px solid rgb(255, 187, 41); /* Outline color */
+  border-radius: 50%; /* Makes it a circle */
+  font-size: 12px;
+  margin-left: 5px;
+}
+.circle-ellipsis .active {
+  font-size: 12px;
+  color: rgb(255, 187, 41);
+  margin-left: 0;
+}
+hr {
+  width: 70vw;
+  margin: auto;
+  border-color: rgb(141, 138, 138);
+  outline: none;
+}
+.teams {
+  padding: 20px;
+}
+.teams button {
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  background: none;
+  color: rgb(141, 138, 138);
+}
+button.active_team u {
+  color: #ffffff;
+}
+.details_container {
+  padding: 8px 20px;
+}
+.add_player_btn {
+  color: #d1b97d;
+  font-size: 14px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  outline: none;
+}
+table {
+  margin: 20px 0px;
+  width: 100vw;
+}
+table thead {
+  color: rgb(141, 138, 138);
+  font-size: 14px;
+}
+.hidden {
+  display: none;
+}
+.fa-check-circle {
+  color: green;
+  font-size: 250px;
+}
+.dark-modal {
+  background-color: #343a40;
+  color: white;
+}
+.dark-modal .modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.table td,
+.table th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.btn-outline-club7 {
+  border: 1px solid #d1b97d;
+  /* background: #Fff; */
+  color: #d1b97d;
+  font-weight: 600;
+  height: 38px;
+  font-size: 13px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.btn-club7 {
+  background-color: #d1b97d;
+}
+.btn-outline-club7:hover {
+  background-color: #d1b97d;
+  box-shadow: 3px 3px 5px 2px #d1b97d2b;
+  transition: 0.3s;
+  color: #fff;
+}
+.text-club7 {
+  color: #d1b97d;
+}
+.btn-pending {
+  background-color: #92410c;
+  color: #e6870a;
+}
+.text-later{
+    color: #e6870a;
+}
+.text-cancel{
+    color: #d1b97d;
+}
+.text-cancel:hover{
+    color: #d1b97d;
+}

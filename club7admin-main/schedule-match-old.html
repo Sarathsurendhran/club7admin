@@ -1,0 +1,3309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component data-page="schedule-match"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Schedule Match</h6>
+        </div>
+        <div class="header-right">
+          <a href="notification.html" class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </a>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2" >
+        <ul class="nav nav-tabs" >
+          <li class="nav-item" >
+            <button class="nav-link active" id="league_tournament-tab" data-bs-toggle="tab" data-bs-target="#league_tournament" type="button" role="tab" aria-controls="league_tournament" aria-selected="true">League / Tournament</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="inhouse_match-tab" data-bs-toggle="tab" data-bs-target="#inhouse_match" type="button" role="tab" aria-controls="inhouse_match" aria-selected="false">Inhouse Match</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="league_tournament" role="tabpanel" aria-labelledby="league_tournament-tab">
+            
+            <div class="tab1" id="league_match">
+              <div class="filter-bar mt-3" style="align-items: flex-end;">
+              <h5 class="font-weight-500 text-4">League / Tournament 03</h5>
+              <a id="schedule-btn" class="btn btn-club7 px-4" >
+                Schedule  match
+              </a>
+              
+              </div>
+              <div class="row mx-0 mt-3" style="row-gap:25px;">
+              <div class="col-xl-6 ps-0 pe-0 pe-xl-2">
+                
+                <div class="table-sec" style="overflow: auto; min-height: auto;">
+                  <table class="table1">
+                    <thead>
+                      <tr >
+                        <th>
+                          Match Title
+                        </th>
+                       
+                        <th >
+                          Date
+                        </th>
+                        <th >
+                          Time
+                        </th>
+                        <th >
+                          Status
+                        </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="active">
+                        <td>
+                          Match title A
+                        </td>
+                        
+                        <td >
+                          Aug 05 MON, 2023
+                        </td>
+                        <td >
+                          11:00 am
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td>
+                          Match title B
+                        </td>
+                        
+                        <td >
+                          Aug 05 MON, 2023
+                        </td>
+                        <td >
+                          11:00 am
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-success text-success">Active</badge>
+                        </td>
+                        
+                      </tr>
+                      <tr>
+                        <td>
+                          Match title C
+                        </td>
+                        
+                        <td >
+                          Aug 05 MON, 2023
+                        </td>
+                        <td >
+                          11:00 am
+                        </td>
+                        <td >
+                          <badge class="badge bg-soft-danger text-danger">Expired</badge>
+                        </td>
+                        
+                      </tr>
+
+                     
+                    </tbody>
+                  </table>
+                </div>
+                
+              </div>
+              <div class="col-xl-6  pe-0 ps-xl-3 ps-0">
+                
+                <div class="card-2 p-0 m-0">
+                  <div class="card-2-head d-flex justify-content-between g2 p-3" style=" flex-wrap:wrap;row-gap:10px; align-items: flex-end;">
+                    <div class="text-start">
+                      <h4 class="font-weight-600">Match title A</h4>
+                      <h5 class="font-weight-500 pt-1">Jan 10 MON , 2023  |  11:00 AM</h5>
+                    </div>
+                    <div class="text-start flex-align3 g3">
+                      <h5 class="font-weight-600">Huron heights</h5>
+                      <img src="images/edit.png" style="width:12px;height:12px;object-fit: contain;">
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <div class="card-2-body text-start">
+                    
+                    <div class="table-sec2"  style="overflow: auto;
+                    width: 100%;">
+                      <table class="table1">
+                        <thead>
+                          <tr style="">
+                            <th>
+                              Players
+                            </td>
+                            <th>
+                              Played games
+                            </th>
+                            <th >
+                              Player type
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="flex-align3 g2">
+                                <img src="images/user1.png" class="user-dp3">
+                                <h5 class="">David Davis</h5>
+                              </div>
+                            </td>
+                            <td>
+                             25
+                            </td>
+                            <td >
+                              Batting
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="tab2" id="schedule_match" style="display: none;">
+              <div id="league_match_btn" class="flex-align3 g2 mt-4 cursor-pointer">
+                <a>
+                    <img src="images/left-arrow.png" style="width:18px;object-fit: contain;">
+                </a>
+                <h4>Schedule match</h4>
+              </div>
+              <div class="toggle-tab-container flex-align3 g2 pt-4">
+                <h5 class="text-primary">Schedule with all details</h5>
+                <div class="toggle">
+                  <input type="checkbox" name="">
+                  <span class="toggle-bar"></span>                 
+                </div>
+                <h5>Schedule with date only</h5>
+              </div>
+              <div class="row mt-3" style="row-gap: 10px;">
+                <div class="col-12 col-item">
+                  <h5 class="font-weight-600  mb-2">Select imported fixture Match</h5>
+                  <div class="select-container  position-relative">
+                    <select class="select-input w-100" style="min-width: 150px;">
+                      <option>06/15/2024
+                        |    Mississauga club7 - Gold VS Golden Knights Sports Club
+                      
+                      </option>
+                      <option>06/15/2024
+                        |    Mississauga club7 - Gold VS Golden Knights Sports Club
+                      
+                      </option> 
+                    </select>
+                    <button class="badge border-0 badge-soft-light" style="position: absolute; right:60px; top:50%; transform:translatey(-50%);">Not Scheduled</button>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-item">
+                  <h5 class="font-weight-600  mb-2">Series</h5>
+                  <input type="text" value="TDCA- 2024 Season" name="search" class="input w-100">
+                </div>
+                <div class="col-xl-4 col-md-6 col-item">
+                  <h5 class="font-weight-600  mb-2">Division</h5>
+                  
+                </div>
+                <div class="col-xl-4 col-md-6 col-item">
+                  <h5 class="font-weight-600  mb-2">Match type</h5>
+                  <input type="text" value="league" name="search" class="input w-100">
+                </div>
+                <div class="col-xl-4 col-md-6 col-item">
+                  <h5 class="font-weight-600  mb-2">Date</h5>
+                  <input type="date" placeholder="Select Match Date" name="search" class="input w-100">
+                </div>
+                <div class="col-xl-4 col-md-6 col-item">
+                  <h5 class="font-weight-600  mb-2">Time</h5>
+                  <input type="time" placeholder="Select match time" name="search" class="input w-100">
+                </div>
+                <div class="col-xl-4 col-md-6 col-item">
+                  <h5 class="font-weight-600  mb-2">Match Fee <span class="font-weight-400 text-gray" style="font-style: italic;">(Optional)</span></h5>
+                  <input type="text" placeholder="Enter match title" name="search" class="input w-100">
+                </div>
+                
+                
+                <div class="col-xl-4 col-md-6 col-item">
+                  <h5 class="font-weight-600  mb-2">venuw</h5>
+                  <div class="select-container ">
+                    <select class="select-input w-100" style="min-width: 150px;">
+                      <option>Iceland</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-item flex-align g2 mt-3">
+                 
+                    <label for="food" class="flex-align g1 cursor-pointer">
+                      <input id="food" type="checkbox">
+                      <h5 class="font-weight-600">Food preference </h5>
+                    </label>
+                    <div class="flex-align g1">
+                      <h5 class="font-weight-600">Match Officials</h5>
+                      <div class="toggle">
+                        <input type="checkbox" name="">
+                        <span class="toggle-bar"></span>
+                        
+                      </div>
+                    </div>
+
+                 
+                </div>
+                
+                <div class="row mt-3" style="row-gap: 10px;">
+                  <div class="col-xl-4 col-md-6 col-item">
+                    <h5 class="font-weight-600  mb-2">Live score</h5>
+                    <div class="input-with-btn">
+                      <input type="text" placeholder="Live score Link" name="Live score Link" class="input w-100">
+                      <button>Update</button>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6 col-item">
+                    <h5 class="font-weight-600  mb-2">Live streaming</h5>
+                    <div class="input-with-btn">
+                      <input type="text" placeholder="Live streaming link" name="Live score Link" class="input w-100">
+                      <button>Update</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-8 col-item mt-3">
+                  <h5 class="font-weight-600  mb-2">Select team players</h5>
+                  <div class="col-md-6 col-item mt-3 p-3 w-100" style=" ">
+                    <h5 class="font-weight-600  mb-2">Select team category</h5>
+                    <div class="select-container ">
+                      <select class="select-input w-100" style="min-width: 150px;">
+                        <option>Select Category</option>
+                        <option>Elite - Gold</option>
+
+                      </select>
+                    </div>
+                    <div class="flex-align g2 pt-4">
+                      <h5 id="players_number" class="font-weight-600">Selected layers (20)</h5>
+                      <h5  class="font-weight-600 text-primary cursor-pointer" data-bs-toggle="modal" data-bs-target="#addNew">+ Add player</h5>
+                    </div>
+                    <div class="pt-3" style="overflow: auto;
+                    width: 100%;">
+                      <table class="table1 ">
+                        
+                        <tbody>
+                          <tr>
+                            
+                            <td class="ps-0">
+                              <div class="flex-align3 g2">
+                                <input type="checkbox">
+                                <img src="images/user1.png" class="user-dp2">
+                                <div>
+                                  <h5 class="">David Davis</h5>
+                                  <h6 class="text-gray">Right hand batting</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <h6>20</h6>
+                              <h6 class="text-gray">Played games</h6>
+                            </td>
+                            <td>
+                              <h6 class="text-success">Paid</h6>
+                              <h6 class="text-gray">Membership fee</h6>
+                            </td>
+                            <td class="pe-0"  style="text-align: right;">
+                              <img src="images/rounded-delete.png" class="user-dp2">
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td class="ps-0">
+                              <div class="flex-align3 g2">
+                                <input type="checkbox">
+                                <img src="images/user1.png" class="user-dp2">
+                                <div>
+                                  <h5 class="">David Davis</h5>
+                                  <h6 class="text-gray">Right hand batting</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <h6>20</h6>
+                              <h6 class="text-gray">Played games</h6>
+                            </td>
+                            <td>
+                              <h6 class="text-success">Paid</h6>
+                              <h6 class="text-gray">Membership fee</h6>
+                            </td>
+                            <td  class="pe-0" style="text-align: right;">
+                              <img src="images/rounded-delete.png" class="user-dp2">
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td class="ps-0">
+                              <div class="flex-align3 g2">
+                                <input type="checkbox">
+                                <img src="images/user1.png" class="user-dp2">
+                                <div>
+                                  <h5 class="">David Davis</h5>
+                                  <h6 class="text-gray">Right hand batting</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <h6>20</h6>
+                              <h6 class="text-gray">Played games</h6>
+                            </td>
+                            <td>
+                              <h6 class="text-success">Paid</h6>
+                              <h6 class="text-gray">Membership fee</h6>
+                            </td>
+                            <td class="pe-0"  style="text-align: right;">
+                              <img src="images/rounded-delete.png" class="user-dp2">
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td class="ps-0">
+                              <div class="flex-align3 g2">
+                                <input type="checkbox">
+                                <img src="images/user1.png" class="user-dp2">
+                                <div>
+                                  <h5 class="">David Davis</h5>
+                                  <h6 class="text-gray">Right hand batting</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <h6>20</h6>
+                              <h6 class="text-gray">Played games</h6>
+                            </td>
+                            <td>
+                              <h6 class="text-success">Paid</h6>
+                              <h6 class="text-gray">Membership fee</h6>
+                            </td>
+                            <td class="pe-0"  style="text-align: right;">
+                              <img src="images/rounded-delete.png" class="user-dp2">
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td class="ps-0">
+                              <div class="flex-align3 g2">
+                                <input type="checkbox">
+                                <img src="images/user1.png" class="user-dp2">
+                                <div>
+                                  <h5 class="">David Davis</h5>
+                                  <h6 class="text-gray">Right hand batting</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <h6>20</h6>
+                              <h6 class="text-gray">Played games</h6>
+                            </td>
+                            <td>
+                              <h6 class="text-success">Paid</h6>
+                              <h6 class="text-gray">Membership fee</h6>
+                            </td>
+                            <td class="pe-0"  style="text-align: right;">
+                              <img src="images/rounded-delete.png" class="user-dp2">
+                            </td>
+                          </tr>
+                          <tr>
+                            
+                            <td class="ps-0">
+                              <div class="flex-align3 g2">
+                                <input type="checkbox">
+                                <img src="images/user1.png" class="user-dp2">
+                                <div>
+                                  <h5 class="">David Davis</h5>
+                                  <h6 class="text-gray">Right hand batting</h6>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <h6>20</h6>
+                              <h6 class="text-gray">Played games</h6>
+                            </td>
+                            <td>
+                              <h6 class="text-success">Paid</h6>
+                              <h6 class="text-gray">Membership fee</h6>
+                            </td>
+                            <td class="pe-0"  style="text-align: right;">
+                              <img src="images/rounded-delete.png" class="user-dp2">
+                            </td>
+                          </tr>
+
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-2 d-flex justify-content-end g2">
+                <div class="btn btn-outline-secondary px-4">
+                          cancel
+                </div>
+                <div class="btn btn-club74 px-4" data-bs-toggle="modal" data-bs-target="#success">
+                          Schedule
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="inhouse_match" role="tabpanel" aria-labelledby="inhouse_match-tab">
+            <div class="nav inhouse-tabs mt-3 pt-1" style="background-color: #F4F8FA;">
+              <label for="match" class="nav-link active flex-align3 g1" id="match_creation-tab2" data-bs-toggle="tab" data-bs-target="#match_creation" type="button" role="tab" aria-controls="match_creation" aria-selected="true">
+                <input id="match" type="radio" name="creation_type" checked>
+                Match creation
+              </label>
+              <label for="team" class="nav-link flex-align3 g1" id="team_creation-tab2" data-bs-toggle="tab" data-bs-target="#team_creation" type="button" role="tab" aria-controls="team_creation" aria-selected="false">
+                <input id="team" type="radio" name="creation_type">
+                Team creation
+              </label>
+            </div>
+            <div class="tab-content" id="myTabContent2">
+              <div class="tab-pane fade show active" id="match_creation" role="tabpanel" aria-labelledby="match_creation-tab2">
+                <div class="tab1" id="league_match2">
+                  <div class="filter-bar mt-3" style="align-items: flex-end;">
+                    <h5 class="font-weight-500 text-4">League / Tournament 03</h5>
+                    <a id="schedule-btn2" class="btn btn-club7 px-4" >
+                      Schedule  match
+                    </a>
+                  
+                  </div>
+                  <div class="row mx-0 mt-3" style="row-gap:25px;">
+                    <div class="col-xl-6 ps-0 pe-0 pe-xl-2">
+                      
+                      <div class="table-sec" style="overflow: auto; min-height: auto;">
+                        <table class="table1">
+                          <thead>
+                            <tr>
+                              <th>
+                                Match Title
+                              </th>
+                            
+                              <th >
+                                Date
+                              </th>
+                              <th >
+                                Time
+                              </th>
+                              <th >
+                                Status
+                              </th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="active">
+                              <td>
+                                Match title A
+                              </td>
+                              
+                              <td >
+                                Aug 05 MON, 2023
+                              </td>
+                              <td >
+                                11:00 am
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-success text-success">Active</badge>
+                              </td>
+                              
+                            </tr>
+                            <tr>
+                              <td>
+                                Match title B
+                              </td>
+                              
+                              <td >
+                                Aug 05 MON, 2023
+                              </td>
+                              <td >
+                                11:00 am
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-success text-success">Active</badge>
+                              </td>
+                              
+                            </tr>
+                            <tr>
+                              <td>
+                                Match title C
+                              </td>
+                              
+                              <td >
+                                Aug 05 MON, 2023
+                              </td>
+                              <td >
+                                11:00 am
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-danger text-danger">Expired</badge>
+                              </td>
+                              
+                            </tr>
+
+                          
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                    </div>
+                    <div class="col-xl-6  pe-0 ps-xl-3 ps-0">
+                     
+                      <div class="card-2 p-0 mt-0">
+                        <div class="card-2-head d-flex justify-content-between g2 p-3" style=" flex-wrap:wrap;row-gap:10px; align-items: flex-end;">
+                          <div class="text-start">
+                            <h4 class="font-weight-600">Match title A</h4>
+                            <h5 class="font-weight-500 pt-1">Jan 10 MON , 2023  |  11:00 AM</h5>
+                          </div>
+                          <div class="text-start flex-align3 g3">
+                            <h5 class="font-weight-600">Huron heights</h5>
+                            <img src="images/edit.png" style="width:12px;height:12px;object-fit: contain;">
+                          </div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="card-2-body text-start mt-2">
+                          <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                              <button class="nav-link active w-50 m-0" id="nav-team-1-tab" data-bs-toggle="tab" data-bs-target="#nav-team-1" type="button" role="tab" aria-controls="nav-team-1" aria-selected="true">Team 1</button>
+                              <button class="nav-link w-50 m-0" id="nav-team-2-tab" data-bs-toggle="tab" data-bs-target="#nav-team-2" type="button" role="tab" aria-controls="nav-team-2" aria-selected="false">Team 2</button>
+                            </div>
+                          </nav>
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-team-1" role="tabpanel" aria-labelledby="nav-team-1-tab">
+                              <div class="table-sec2"  style="overflow: auto;
+                              width: 100%;">
+                                <table class="table1">
+                                  <thead>
+                                    <tr style="">
+                                      <th>
+                                        Players
+                                      </td>
+                                      <th>
+                                        Played games
+                                      </th>
+                                      <th >
+                                        Player type
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-team-2" role="tabpanel" aria-labelledby="nav-team-2-tab">
+                              <div class="table-sec2"  style="overflow: auto;
+                              width: 100%;">
+                                <table class="table1">
+                                  <thead>
+                                    <tr style="">
+                                      <th>
+                                        Players
+                                      </td>
+                                      <th>
+                                        Played games
+                                      </th>
+                                      <th >
+                                        Player type
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      25
+                                      </td>
+                                      <td >
+                                        Batting
+                                      </td>
+                                    </tr>
+
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab2" id="schedule_match2" style="display: none;">
+                  <div id="league_match_btn2" class="flex-align3 g2 mt-4 cursor-pointer">
+                    <a>
+                        <img src="images/left-arrow.png" style="width:18px;object-fit: contain;">
+                    </a>
+                    <h4>Schedule match</h4>
+                  </div>
+                  <div class="toggle-tab-container flex-align3 g2 pt-4">
+                    <h5 class="text-primary">Schedule with all details</h5>
+                    <div class="toggle">
+                      <input type="checkbox" name="">
+                      <span class="toggle-bar"></span>                 
+                    </div>
+                    <h5>Schedule with date only</h5>
+                  </div>
+                  <div class="row mt-3" style="row-gap: 10px;">
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Match Title</h5>
+                      <input type="text" placeholder="Enter match title" name="search" class="input w-100">
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Date</h5>
+                      <input type="date" placeholder="Select Match Date" name="search" class="input w-100">
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Time</h5>
+                      <input type="time" placeholder="Select match time" name="search" class="input w-100">
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Tournament Fee <span class="font-weight-400 text-gray" style="font-style: italic;">(Optional)</span></h5>
+                      <input type="text" placeholder="Enter match title" name="search" class="input w-100">
+                    </div>
+                    
+                    
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Venue</h5>
+                      <input type="text" placeholder="Enter match venue" name="search" class="input w-100">
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-item flex-align g2 mt-3">
+                    
+                        <label for="food2" class="flex-align g1 cursor-pointer">
+                          <input id="food2" type="checkbox">
+                          <h5 class="font-weight-600">Food preference </h5>
+                        </label>
+                        <div class="flex-align g1">
+                          <h5 class="font-weight-600">Match Officials</h5>
+                          <div class="toggle" data-bs-toggle="modal" data-bs-target="#official">
+                            <input type="checkbox" name="">
+                            <span class="toggle-bar"></span>
+                            
+                          </div>
+                        </div>
+
+                    
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Live score</h5>
+                      <div class="input-with-btn">
+                        <input type="text" placeholder="Live score Link" name="Live score Link" class="input w-100">
+                        <button>Update</button>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Live streaming</h5>
+                      <div class="input-with-btn">
+                        <input type="text" placeholder="Live streaming link" name="Live score Link" class="input w-100">
+                        <button>Update</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-item mt-3">
+                        <h5 class="font-weight-600">Select team players</h5>
+                      </div>
+                      <div class="col-xl-6 col-lg-8 col-item">
+                        <div class="p-3 w-100" style=" ">
+                          <h5 class="font-weight-600  mb-2">Select team category</h5>
+                          <div class="select-container ">
+                            <select class="select-input w-100" style="min-width: 150px;">
+                              <option>Select Category</option>
+                              <option>Elite - Gold</option>
+
+                            </select>
+                          </div>
+                          <div class="flex-align g2 pt-4">
+                            <h5 id="players_number" class="font-weight-600">Selected layers (20)</h5>
+                            <h5  class="font-weight-600 text-primary cursor-pointer" data-bs-toggle="modal" data-bs-target="#addNew">+ Add player</h5>
+                          </div>
+                          <div class="pt-3" style="overflow: auto;
+                          width: 100%;">
+                            <table class="table1 ">
+                              
+                              <tbody>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td  class="pe-0" style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-6 col-lg-8 col-item">
+                        <div class="p-3 w-100" style=" ">
+                          <h5 class="font-weight-600  mb-2">Select team category</h5>
+                          <div class="select-container ">
+                            <select class="select-input w-100" style="min-width: 150px;">
+                              <option>Select Category</option>
+                              <option>Elite - Gold</option>
+
+                            </select>
+                          </div>
+                          <div class="flex-align g2 pt-4">
+                            <h5 id="players_number" class="font-weight-600">Selected layers (20)</h5>
+                            <h5  class="font-weight-600 text-primary cursor-pointer" data-bs-toggle="modal" data-bs-target="#addNew">+ Add player</h5>
+                          </div>
+                          <div class="pt-3" style="overflow: auto;
+                          width: 100%;">
+                            <table class="table1 ">
+                              
+                              <tbody>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td  class="pe-0" style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  
+                                  <td class="ps-0">
+                                    <div class="flex-align3 g2">
+                                      <input type="checkbox">
+                                      <img src="images/user1.png" class="user-dp2">
+                                      <div>
+                                        <h5 class="">David Davis</h5>
+                                        <h6 class="text-gray">Right hand batting</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <h6>20</h6>
+                                    <h6 class="text-gray">Played games</h6>
+                                  </td>
+                                  <td>
+                                    <h6 class="text-success">Paid</h6>
+                                    <h6 class="text-gray">Membership fee</h6>
+                                  </td>
+                                  <td class="pe-0"  style="text-align: right;">
+                                    <img src="images/rounded-delete.png" class="user-dp2">
+                                  </td>
+                                </tr>
+
+                                
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="mt-2 d-flex justify-content-end g2">
+                    <div class="btn btn-outline-secondary px-4">
+                              cancel
+                    </div>
+                    <div class="btn btn-club74 px-4" data-bs-toggle="modal" data-bs-target="#success">
+                              Schedule
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="team_creation" role="tabpanel" aria-labelledby="team_creation-tab2">
+                <div class="tab1" id="inhouse_tab_match">
+                  
+                  <div class="filter-bar mt-3" style="align-items: flex-end;">
+                    <h5 class="font-weight-500 text-4">Created teams 04</h5>
+                    <div class="flex-align3 g2" style="flex-wrap:wrap;">
+                      <a class="btn btn-outline-club7" data-bs-toggle="modal" data-bs-target="#assignGround">
+                        View/ Assign Ground 
+                      </a>
+                      <a id="create-btn"  class="btn btn-club7">
+                        + Create Team
+                      </a>
+                    </div>
+                  
+                  </div>
+                  <div class="row mx-0 mt-3" style="row-gap:25px;">
+                    <div class="col-xl-3 ps-0 pe-0 pe-xl-2">
+                      
+                      <div class="table-sec" style="overflow: auto; min-height: auto;">
+                        <table class="table1">
+                        
+                          <tbody>
+                            <tr class="active">
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">Team A</h5>
+                                </div>
+                              </td>
+                              
+                              <td >
+                                30
+                              </td>
+                              
+                            </tr>
+                            <tr >
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">Team B</h5>
+                                </div>
+                              </td>
+                              
+                              <td >
+                                20
+                              </td>
+                              
+                            </tr>
+                            <tr >
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">Team C</h5>
+                                </div>
+                              </td>
+                              
+                              <td >
+                              12
+                              </td>
+                              
+                            </tr>
+                          
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                    </div>
+                    <div class="col-xl-9  pe-0 ps-xl-3 ps-0">
+                      
+                      <div class="card-2 p-0 mt-0" style="min-height: calc(100vh - 140px);">
+                        <div class="card-2-head d-flex justify-content-between g2 p-3" style=" flex-wrap:wrap;row-gap:10px; align-items: center;">
+                          <div class="text-start">
+                            <h4 class="font-weight-600">Team A</h4>
+                          </div>
+                          <div class="">
+                            <h4 class="font-weight-500" style="text-align: right;">30</h4>
+                            <h5 class="text-gray font-weight-400 mt-1">Players</h5>
+
+                          </div>
+                        </div>
+                        <hr class="m-0">
+                        <div class="card-2-body text-start py-3 px-4"  style="">
+                          
+                          <div class="row">
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user1.png">
+                                <h5 class="ellipsis">Anna Lee</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user2.png">
+                                <h5 class="ellipsis">Chris Anderson</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user3.png">
+                                <h5 class="ellipsis">Olivia Martinez</h5>
+                                <h6>President</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user4.png">
+                                <h5 class="ellipsis">Mike Taylor</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user5.png">
+                                <h5 class="ellipsis">Sarah Wilson</h5>
+                                <h6>Secretary</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user6.png">
+                                <h5 class="ellipsis">Alex Davis</h5>
+                                <h6>Club Captain</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user7.png">
+                                <h5 class="ellipsis">Emily Brown</h5>
+                                <h6>Secretary</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user8.png">
+                                <h5 class="ellipsis">Max Johnson</h5>
+                                <h6>Social Director</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user1.png">
+                                <h5 class="ellipsis">Anna Lee</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user2.png">
+                                <h5 class="ellipsis">Chris Anderson</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user3.png">
+                                <h5 class="ellipsis">Olivia Martinez</h5>
+                                <h6>President</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user4.png">
+                                <h5 class="ellipsis">Mike Taylor</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user5.png">
+                                <h5 class="ellipsis">Sarah Wilson</h5>
+                                <h6>Secretary</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user6.png">
+                                <h5 class="ellipsis">Alex Davis</h5>
+                                <h6>Club Captain</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user7.png">
+                                <h5 class="ellipsis">Emily Brown</h5>
+                                <h6>Secretary</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user8.png">
+                                <h5 class="ellipsis">Max Johnson</h5>
+                                <h6>Social Director</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user1.png">
+                                <h5 class="ellipsis">Anna Lee</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user2.png">
+                                <h5 class="ellipsis">Chris Anderson</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user3.png">
+                                <h5 class="ellipsis">Olivia Martinez</h5>
+                                <h6>President</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user4.png">
+                                <h5 class="ellipsis">Mike Taylor</h5>
+                                <h6>Member</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user5.png">
+                                <h5 class="ellipsis">Sarah Wilson</h5>
+                                <h6>Secretary</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user6.png">
+                                <h5 class="ellipsis">Alex Davis</h5>
+                                <h6>Club Captain</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user7.png">
+                                <h5 class="ellipsis">Emily Brown</h5>
+                                <h6>Secretary</h6>
+                              </div>
+                            </div>
+                            <div class="col-lg-52 col-md-3 col-sm-4 col-6 col-item">
+                              <div class="card-1 ">
+                                <img src="images/user8.png">
+                                <h5 class="ellipsis">Max Johnson</h5>
+                                <h6>Social Director</h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab2" id="create_match" style="display: none;">
+                  <div id="inhouse_btn" class="flex-align3 g2 mt-4 cursor-pointer">
+                    <a>
+                        <img src="images/left-arrow.png" style="width:18px;object-fit: contain;">
+                    </a>
+                    <h4>Create new team</h4>
+                  </div>
+                  
+                  <div class="row mt-3" style="row-gap: 10px;">
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Team name</h5>
+                      <input type="text" placeholder="Enter team name" name="search" class="input w-100">
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-item">
+                      <h5 class="font-weight-600  mb-2">Team logo / Image <span class="font-weight-400 text-gray" style="font-style: italic;">(Optional)</span></h5>
+                      <div class="image-picker">
+                        <input type="file" accept="image/*" class="input w-100">
+                        <div class="image-picker-tab">
+                          <img src="images/upload3.png">
+                          Upload image
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    
+                    
+                  </div>
+                  <div class="row mx-0 mt-3">
+                    <div class="col-lg-6 ps-0 pe-0 pe-lg-2">
+                      <div class="row">
+                        <div class="col-12 col-item py-0">
+                          <h5 class="font-weight-600">All Players List <span class="font-weight-400">(120)</span></h5>
+                        </div>
+                        <div class="col-lg-4 col-item">
+                          <select class="w-100">
+                            <option>All players</option>
+                          </select>
+                        </div>
+                       
+                        
+                      </div>
+                      <div class="table-sec">
+                        <div class="table1">
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-danger font-weight-400">Not Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-warning font-weight-400">Partially Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-warning font-weight-400">Partially Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                              
+                            </div>
+                            
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div class="btn btn-club73 px-2" style="height:26px;">
+                                  Add
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+          
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="col-lg-6 pe-0 ps-0 ps-lg-2">
+                      <div class="row" style="align-items: center;">
+                        <div class="col-12 col-item py-0">
+                          <h5 class="font-weight-600">Selected Players List <span class="font-weight-400">(120)</span></h5>
+                        </div>
+                        <div class="flex-align3 g2 col-item">
+                          <h5 class="font-weight-400" style="white-space: nowrap;">Add Players by created team</h5>
+                        
+                          <select class="" style="min-width: 200px;">
+                            <option>Team A</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                      <div class="table-sec">
+                        <div class="table1">
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-danger font-weight-400">Not Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-warning font-weight-400">Partially Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-warning font-weight-400">Partially Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                              
+                            </div>
+                            
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="table-row"  >
+                            <div class="table-tr row m-0">
+                              <div class="pe-0 col-1  table-td">
+                                <div class="checkbox">
+                                  <input type="checkbox" name="">
+                                </div>
+                              </div>
+                              <div class="col-4  table-td">
+                                <div class="flex-align3 g2">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="font-weight-400">Anna Lee</h5>
+                                    <h6>Member</h6>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  class="col-2  table-td">
+                                <div>
+                                    <h5 class="font-weight-400">38</h5>
+                                    <h6>Played games</h6>
+                                </div>
+                              </div>
+                              <div  class="col-3  table-td">
+                                <div>
+                                    <h5 class="text-success font-weight-400">Paid</h5>
+                                    <h6>Membership fee</h6>
+                                </div>
+                              </div>
+                              <div  class="col-2 text-right table-td">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </div>
+                            </div>
+                            
+                          </div>
+          
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                    <div class="mt-2 d-flex justify-content-end g2 mt-4">
+                      <div class="btn btn-outline-secondary px-4">
+                        cancel
+                      </div>
+                      <div class="btn btn-club74 px-4" >
+                                Save
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="addNew" tabindex="-1" aria-labelledby="addNewLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+      <div class="modal-content">
+       
+        <div class="modal-body px-0 pt-0 pb-4">
+            <div class="flex-align moadl-head2 p-5">
+              <h3>Add player</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2"> 
+              <div class="added-player ">          
+                <div class="px-5">
+                  <h5 class="font-weight-600">Added Players (3)</h5>
+                </div>
+                <div class="px-5 py-3 "  style="overflow: auto;
+                width: 100%;">
+                  <table class="table1  modal-table2">                   
+                    <tbody>
+                      <tr>                       
+                        <td>
+                          <div class="flex-align3 g2">
+                            <input type="checkbox">
+                            <img src="images/user1.png" class="user-dp2">
+                            <div>
+                              <h5 class="">David Davis</h5>
+                              <h6 class="text-gray">Right hand batting</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <h6>20</h6>
+                          <h6 class="text-gray">Played games</h6>
+                        </td>
+                        <td>
+                          <h6 class="text-success">Paid</h6>
+                          <h6 class="text-gray">Membership fee</h6>
+                        </td>
+                        <td  style="text-align: right;">
+                          <img src="images/rounded-delete.png" class="user-dp2">
+                        </td>
+                      </tr>
+                      <tr>
+                        
+                        <td>
+                          <div class="flex-align3 g2">
+                            <input type="checkbox">
+                            <img src="images/user1.png" class="user-dp2">
+                            <div>
+                              <h5 class="">David Davis</h5>
+                              <h6 class="text-gray">Right hand batting</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <h6>20</h6>
+                          <h6 class="text-gray">Played games</h6>
+                        </td>
+                        <td>
+                          <h6 class="text-success">Paid</h6>
+                          <h6 class="text-gray">Membership fee</h6>
+                        </td>
+                        <td  style="text-align: right;">
+                          <img src="images/rounded-delete.png" class="user-dp2">
+                        </td>
+                      </tr>
+                      <tr>
+                        
+                        <td>
+                          <div class="flex-align3 g2">
+                            <input type="checkbox">
+                            <img src="images/user1.png" class="user-dp2">
+                            <div>
+                              <h5 class="">David Davis</h5>
+                              <h6 class="text-gray">Right hand batting</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <h6>20</h6>
+                          <h6 class="text-gray">Played games</h6>
+                        </td>
+                        <td>
+                          <h6 class="text-success">Paid</h6>
+                          <h6 class="text-gray">Membership fee</h6>
+                        </td>
+                        <td  style="text-align: right;">
+                          <img src="images/rounded-delete.png" class="user-dp2">
+                        </td>
+                      </tr>
+        
+
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <hr class="mx-5">
+              <div class="add-player"  style="overflow: auto;
+              width: 100%;">          
+                <div class="px-5">
+                      <div class="col-lg-4 col-md-6 col-item">
+                        <h5 class="font-weight-500 mb-1">Team</h5>
+                        <select class="w-100" style="min-width: 150px;">
+                          <option>Team A</option>
+                          <option>Team B</option>
+                          <option selected>Team C</option>
+
+                        </select>
+                      </div>                   
+                </div>
+                <table class="table1 modal-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        Player name
+                      </td>
+                      <th>
+                        Age
+                      </th>
+                      <th >
+                        Played games
+                      </th>
+                      <th>Membership fee</th>
+                      <th></th>
+                    </tr>
+                  </thead>        
+                  <tbody>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: right;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: right;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: right;">
+                        <div class="btn btn-club73 disable px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: right;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: right;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: right;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: right;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+
+                  
+
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <hr>
+            <div class="modal-footer2 d-flex justify-content-end g2 pt-3 mx-5">
+              <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-club7 px-4">Done</button>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="success" tabindex="-1" aria-labelledby="successLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            <div class="flex-align modal-head2" style="justify-content: flex-end;">
+              <img src="images/rounded-close2.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2 mt-4" style="display: flex;gap:25px;flex-direction:column;align-items: center;"> 
+              <img src="images/check.png" style="width: 10;height: 100px;">
+              <h3>The team has been successfully scheduled.</h3>
+              <h4 class="text-center font-weight-400" style="line-height: 26px;">You can announce the team in the 'Team selection &
+                Announcement' tab once the players mark their availability in the mobile app</h4>
+            </div>
+           
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="assignGround" tabindex="-1" aria-labelledby="assignGroundLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+       <!--  <div class="modal-header">
+          <h5 class="modal-title" id="assignGroundLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div> -->
+        <div class="modal-body p-4">
+            <div class="flex-align moadl-head2 border-bottom pb-4 mb-3">
+              <h3>View/ Assign Ground </h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2" style="width: 340px;margin: 0 auto;">
+              <div class="table-sec-modal">
+              <table class="table1-modal w-100">
+                <thead>
+                  <tr>
+                    <th class="text-gray" style="font-weight: 400;">Day</th>
+                    <th class="text-gray" style="font-weight: 400; text-align: center;">Category</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Monday</td>
+                    <td class="text-center">
+                      <select class="select-input " style="min-width: 150px;">
+                        <option selected>U18</option>
+                        <option>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td class="text-center">
+                       <select class="select-input " style="min-width: 150px;">
+                        <option>U18</option>
+                        <option selected>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td class="text-center">
+                      <select class="select-input " style="min-width: 150px;">
+                        <option>U18</option>
+                        <option selected>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td class="text-center">
+                      <select class="select-input " style="min-width: 150px;">
+                        <option>U18</option>
+                        <option>Senior Team</option>
+                        <option selected>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td class="text-center">
+                      <select class="select-input " style="min-width: 150px;">
+                        <option>U18</option>
+                        <option>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option selected>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td class="text-center">
+                      <select class="select-input " style="min-width: 150px;">
+                        <option>U18</option>
+                        <option>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option selected>Super-9</option>
+                        <option>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td class="text-center">
+                      <select class="select-input " style="min-width: 150px;">
+                        <option>U18</option>
+                        <option>Senior Team</option>
+                        <option>Premier-Gold</option>
+                        <option>Elite - Gol</option>
+                        <option>Super-9</option>
+                        <option selected>Women Team</option>
+                      </select>
+                    </td>
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+              <div class="modal-footer2 d-flex justify-content-center mt-3 py-3">
+                <button type="button" class="btn btn-club7 px-5 disable">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="official" tabindex="-1" aria-labelledby="officialLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-xl">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            <div class="flex-align moadl-head2 border-bottom pb-4">
+              <h3>Match Officials</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2"> 
+              <div class="row mt-3">
+                <div class="col-12 py-1">
+                  <h4 class="font-weight-500">Captain</h4>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+              </div>
+              <hr>
+              <div class="row mt-3">
+                <div class="col-12 py-1">
+                  <h4 class="font-weight-500">Scorers</h4>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official1.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">Jackson</h4>
+                  </label>
+                </div>
+                <div class="col-lg-82 col-md-2  col-4 col-item">                
+                  <label class="border official-card rounded overflow-hidden">
+                    <div class="checkbox">
+                      <input type="checkbox" name="">
+                    </div>
+                    <img src="images/official2.png">
+                    <h4 class="ellipsis font-weight-600 p-2 text-center">William</h4>
+                  </label>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="modal-footer2 d-flex justify-content-end g2 pt-3">
+              <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-club7 px-4">Select</button>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/script.js"></script>
+  <script>
+    // Get the buttons
+    const scheduleBtn = document.getElementById("schedule-btn");
+    const leagueMatchBtn = document.getElementById("league_match_btn");
+    
+    // Get the elements to be displayed and hidden
+    const scheduleMatch = document.getElementById("schedule_match");
+    const leagueMatch = document.getElementById("league_match");
+    
+    // Add click event listener to the schedule button
+    scheduleBtn.addEventListener("click", function() {
+        // Toggle the display style of the schedule_match element
+        if (scheduleMatch.style.display === "none") {
+            scheduleMatch.style.display = "block";
+        } else {
+            scheduleMatch.style.display = "none";
+        }
+        
+        // Hide the league_match element
+        leagueMatch.style.display = "none";
+    });
+    
+    // Add click event listener to the league match button
+    leagueMatchBtn.addEventListener("click", function() {
+        // Hide the schedule_match element
+        scheduleMatch.style.display = "none";
+        
+        // Display the league_match element
+        leagueMatch.style.display = "block";
+    });
+    
+  </script>
+  <script>
+    // Get the buttons
+    const scheduleBtn2 = document.getElementById("schedule-btn2");
+    const leagueMatchBtn2 = document.getElementById("league_match_btn2");
+    
+    // Get the elements to be displayed and hidden
+    const scheduleMatch2 = document.getElementById("schedule_match2");
+    const leagueMatch2 = document.getElementById("league_match2");
+    
+    // Add click event listener to the schedule button
+    scheduleBtn2.addEventListener("click", function() {
+        // Toggle the display style of the schedule_match element
+        if (scheduleMatch2.style.display === "none") {
+            scheduleMatch2.style.display = "block";
+        } else {
+            scheduleMatch2.style.display = "none";
+        }
+        
+        // Hide the league_match element
+        leagueMatch2.style.display = "none";
+    });
+    
+    // Add click event listener to the league match button
+    leagueMatchBtn2.addEventListener("click", function() {
+        // Hide the schedule_match element
+        scheduleMatch2.style.display = "none";
+        
+        // Display the league_match element
+        leagueMatch2.style.display = "block";
+    });
+    
+  </script>
+
+<script>
+// Get the buttons
+const createBtn = document.getElementById("create-btn");
+const inhouseBtn = document.getElementById("inhouse_btn");
+
+// Get the elements to be displayed and hidden
+const createMatch = document.getElementById("create_match");
+const inhouseMatch = document.getElementById("inhouse_tab_match");
+
+// Add click event listener to the create button
+createBtn.addEventListener("click", function() {
+    // Display the create_match element
+    createMatch.style.display = "block";
+    
+    // Hide the inhouse_match element
+    inhouseMatch.style.display = "none";
+});
+
+// Add click event listener to the inhouse button
+inhouseBtn.addEventListener("click", function() {
+    // Display the inhouse_match element
+    inhouseMatch.style.display = "block";
+    
+    // Hide the create_match element
+    createMatch.style.display = "none";
+});
+
+  
+</script>
+
+   
+     
+
+</body>
+</html>

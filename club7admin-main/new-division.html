@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Division</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #1C1E23;
+      min-height: 100vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .progress-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 6rem;
+      padding-top: 1rem;
+      gap: 3rem;
+      position: relative;
+    }
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-bottom: 1rem;
+    }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .step-text {
+      color: #D4A74B;
+      text-decoration: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .step.inactive .step-text {
+      color: #6C6E73;
+    }
+
+    .step-icon {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .progress-line {
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      background-color: #D4A74B;
+      transition: width 0.3s ease;
+      width: 0;
+    }
+
+    .step.active .progress-line {
+      width: 100%;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0 1rem;
+      margin-top: -2rem;
+    }
+
+    .section {
+      width: 100%;
+      max-width: 600px;
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .input-label {
+      color: #ffffff;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 1rem;
+      background-color: #282A30;
+      border: 1px solid #3A3C42;
+      border-radius: 6px;
+      color: #ffffff;
+      font-size: 1.1rem;
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: #D4A74B;
+    }
+
+    .input-field::placeholder {
+      color: #6C6E73;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .buttons-group {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn-cancel {
+      color: #D4A74B;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+    }
+
+    .btn-next {
+      background-color: #D4A74B;
+      color: #1C1E23;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .btn-cancel:hover {
+      color: #E5B85C;
+    }
+
+    .btn-next:hover {
+      background-color: #E5B85C;
+    }
+  </style>
+  <style>
+    :root {
+      --dark-bg: #282c34;
+      --darker-bg: #21242b;
+      --border-color: #3a3f48;
+      --text-muted: #9ca3af;
+      --success: #22c55e;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: white;
+    }
+
+    .progress-steps {
+      border-bottom: 1px solid var(--border-color);
+      padding: 1rem;
+    }
+
+    .step {
+      color: white;
+      padding: 0.5rem 1rem;
+      position: relative;
+    }
+
+    .step.completed::after {
+      content: "✓";
+      color: var(--success);
+      margin-left: 0.5rem;
+    }
+
+    .step.active {
+      border-bottom: 2px solid #f59e0b;
+    }
+
+    .sidebar {
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    .category-count {
+      color: var(--text-muted);
+    }
+
+    .player-list {
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .player-row {
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.75rem 1rem;
+    }
+
+    .player-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--border-color);
+    }
+
+    .player-info small {
+      color: var(--text-muted);
+    }
+
+    .status-paid {
+      color: var(--success);
+    }
+
+    .status-partially-paid {
+      color: var(--warning);
+    }
+
+    .status-not-paid {
+      color: var(--danger);
+    }
+
+    .btn-add {
+      background-color: transparent;
+      border: 1px solid var(--border-color);
+      color: #c4a962;
+      padding: 0.25rem 1rem;
+      border-radius: 0.25rem;
+    }
+
+    .btn-add:hover {
+      background-color: #c4a96220;
+      color: #c4a962;
+    }
+
+    .btn-save {
+      background-color: #c4a962;
+      border: none;
+      color: white;
+    }
+
+    .table-body {
+      width: 100%;
+      height: 50vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    .table-body::-webkit-scrollbar {
+      display: none;
+      /* Hide scrollbar in WebKit browsers */
+    }
+
+    .player-categories {
+      border: 1px solid var(--border-color);
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .player-categories.items .item {
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 30px 10px 30px;
+    }
+
+    .player-categories.items .item:last-child {
+      border-bottom: none;
+      /* Remove the border from the last item */
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        margin-bottom: 1rem;
+      }
+
+      .player-row {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .player-actions {
+        width: 100%;
+        justify-content: flex-end !important;
+      }
+    }
+  </style>
+  <style>
+    :root {
+      --dark-bg: #282c34;
+      --darker-bg: #21242b;
+      --border-color: #3a3f48;
+      --text-muted: #9ca3af;
+      --success: #22c55e;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: white;
+    }
+
+    .progress-steps {
+      border-bottom: 1px solid var(--border-color);
+      padding: 1rem;
+    }
+
+    .step {
+      color: white;
+      padding: 0.5rem 1rem;
+      position: relative;
+    }
+
+    .step.completed::after {
+      content: "✓";
+      color: var(--success);
+      margin-left: 0.5rem;
+    }
+
+    .step.active {
+      border-bottom: 2px solid #f59e0b;
+    }
+
+    .sidebar {
+      border-radius: 0.5rem;
+      padding: 1rem;
+    }
+
+    .category-count {
+      color: var(--text-muted);
+    }
+
+    .player-list {
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .player-row {
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.75rem 1rem;
+    }
+
+    .player-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--border-color);
+    }
+
+    .player-info small {
+      color: var(--text-muted);
+    }
+
+    .status-paid {
+      color: var(--success);
+    }
+
+    .status-partially-paid {
+      color: var(--warning);
+    }
+
+    .status-not-paid {
+      color: var(--danger);
+    }
+
+    .btn-add {
+      background-color: transparent;
+      border: 1px solid var(--border-color);
+      color: #c4a962;
+      padding: 0.25rem 1rem;
+      border-radius: 0.25rem;
+    }
+
+    .btn-add:hover {
+      background-color: #c4a96220;
+      color: #c4a962;
+    }
+
+    .btn-save {
+      background-color: #c4a962;
+      border: none;
+      color: white;
+    }
+
+    .table-body {
+      width: 100%;
+      height: 50vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+
+    .table-body::-webkit-scrollbar {
+      display: none;
+      /* Hide scrollbar in WebKit browsers */
+    }
+
+    .player-categories {
+      border: 1px solid var(--border-color);
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .player-categories.items .item {
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 30px 10px 30px;
+    }
+
+    .player-categories.items .item:last-child {
+      border-bottom: none;
+      /* Remove the border from the last item */
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        margin-bottom: 1rem;
+      }
+
+      .player-row {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .player-actions {
+        width: 100%;
+        justify-content: flex-end !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="progress-container">
+    <div class="step active">
+      <div class="step-header">
+        <span class="step-text" onclick="switchSection('new-division')">1. New Division</span>
+        <div class="step-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#D4A74B" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8l4 4-4 4M8 12h8"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="progress-line"></div>
+    </div>
+    <div class="step inactive">
+      <div class="step-header">
+        <span class="step-text" onclick="switchSection('player-selection')">2. Division Player selection</span>
+        <div class="step-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#6C6E73" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 8l4 4-4 4M8 12h8"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="progress-line"></div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div id="new-division" class="section active">
+      <div class="input-label">Division Name</div>
+      <input type="text" class="input-field" placeholder="Enter division name">
+    </div>
+  </div>
+
+  <div id="player-selection" class="section" style="max-width: unset !important;">
+
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="sidebar">
+          <h6 class="mb-3"
+            style="border: 1px solid #3a3f48; border-radius: 10px; width: 200px; padding: 10px; text-align: center;">
+            Selected players</h6>
+          <h6 class="mb-3" style="color: rgba(255,255,255,50%);">Player categories</h6>
+
+          <div class="player-categories items">
+            <div class="d-flex justify-content-between mb-2 item" style="background-color: #3A3D4B;">
+              <span>All Players</span>
+              <span class="category-count">63</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2 item">
+              <span>Junior</span>
+              <span class="category-count">▼</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2 item">
+              <span>Women</span>
+              <span class="category-count">▼</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2 item">
+              <span>Social</span>
+              <span class="category-count">▼</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2 item">
+              <span>3rd Division</span>
+              <span class="category-count">13</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2 item">
+              <span>Premier-Gold</span>
+              <span class="category-count">15</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2 item">
+              <span>Elite - Gold</span>
+              <span class="category-count">12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-9">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h6 class="mb-0">All Players (63)</h6>
+          <button class="btn btn-add">Add All Selections</button>
+        </div>
+
+        <div class="player-list">
+          <!-- Header -->
+          <div class="player-row">
+            <div class="row align-items-center w-100">
+              <div class="col-md-1">
+                <input type="checkbox" class="form-check-input">
+              </div>
+              <div class="col-md-3">Player</div>
+              <div class="col-md-2">Played games</div>
+              <div class="col-md-2">Membership fee</div>
+              <div class="col-md-2">Club ID</div>
+              <div class="col-md-2"></div>
+            </div>
+          </div>
+
+          <!-- Player Row Template -->
+          <div class="table-body">
+            <div class="player-row">
+              <div class="row align-items-center w-100">
+                <div class="col-md-1">
+                  <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="player-avatar"></div>
+                    <div class="player-info">
+                      <div>Olivia Martinez</div>
+                      <small>Right hand batting</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">25</div>
+                <div class="col-md-2 status-paid">Paid</div>
+                <div class="col-md-2">ID1002</div>
+                <div class="col-md-2 text-end">
+                  <button class="btn btn-add">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="player-row">
+              <div class="row align-items-center w-100">
+                <div class="col-md-1">
+                  <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="player-avatar"></div>
+                    <div class="player-info">
+                      <div>Olivia Martinez</div>
+                      <small>Right hand batting</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">25</div>
+                <div class="col-md-2 status-paid">Paid</div>
+                <div class="col-md-2">ID1002</div>
+                <div class="col-md-2 text-end">
+                  <button class="btn btn-add">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="player-row">
+              <div class="row align-items-center w-100">
+                <div class="col-md-1">
+                  <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="player-avatar"></div>
+                    <div class="player-info">
+                      <div>Olivia Martinez</div>
+                      <small>Right hand batting</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">25</div>
+                <div class="col-md-2 status-paid">Paid</div>
+                <div class="col-md-2">ID1002</div>
+                <div class="col-md-2 text-end">
+                  <button class="btn btn-add">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="player-row">
+              <div class="row align-items-center w-100">
+                <div class="col-md-1">
+                  <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="player-avatar"></div>
+                    <div class="player-info">
+                      <div>Olivia Martinez</div>
+                      <small>Right hand batting</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">25</div>
+                <div class="col-md-2 status-paid">Paid</div>
+                <div class="col-md-2">ID1002</div>
+                <div class="col-md-2 text-end">
+                  <button class="btn btn-add">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="player-row">
+              <div class="row align-items-center w-100">
+                <div class="col-md-1">
+                  <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="player-avatar"></div>
+                    <div class="player-info">
+                      <div>Olivia Martinez</div>
+                      <small>Right hand batting</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">25</div>
+                <div class="col-md-2 status-paid">Paid</div>
+                <div class="col-md-2">ID1002</div>
+                <div class="col-md-2 text-end">
+                  <button class="btn btn-add">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="player-row">
+              <div class="row align-items-center w-100">
+                <div class="col-md-1">
+                  <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="player-avatar"></div>
+                    <div class="player-info">
+                      <div>Olivia Martinez</div>
+                      <small>Right hand batting</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">25</div>
+                <div class="col-md-2 status-paid">Paid</div>
+                <div class="col-md-2">ID1002</div>
+                <div class="col-md-2 text-end">
+                  <button class="btn btn-add">Add</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="player-row">
+              <div class="row align-items-center w-100">
+                <div class="col-md-1">
+                  <input type="checkbox" class="form-check-input">
+                </div>
+                <div class="col-md-3">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="player-avatar"></div>
+                    <div class="player-info">
+                      <div>Olivia Martinez</div>
+                      <small>Right hand batting</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2">25</div>
+                <div class="col-md-2 status-paid">Paid</div>
+                <div class="col-md-2">ID1002</div>
+                <div class="col-md-2 text-end">
+                  <button class="btn btn-add">Add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="d-flex justify-content-end gap-3 mt-4" style="margin-top: 0 !important;">
+      <button class="btn btn-add">Cancel</button>
+      <button class="btn btn-save">Save</button>
+    </div>
+  </div>
+
+
+  <script>
+    function switchSection(sectionId) {
+      // Update sections
+      document.querySelectorAll('.section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+
+      // Update steps
+      const steps = document.querySelectorAll('.step');
+      if (sectionId === 'player-selection') {
+        steps[0].classList.remove('active');
+        steps[0].classList.add('inactive');
+        steps[1].classList.remove('inactive');
+        steps[1].classList.add('active');
+        // Update icon colors
+        steps[0].querySelector('svg').setAttribute('stroke', '#6C6E73');
+        steps[1].querySelector('svg').setAttribute('stroke', '#D4A74B');
+      } else {
+        steps[0].classList.remove('inactive');
+        steps[0].classList.add('active');
+        steps[1].classList.remove('active');
+        steps[1].classList.add('inactive');
+        // Update icon colors
+        steps[0].querySelector('svg').setAttribute('stroke', '#D4A74B');
+        steps[1].querySelector('svg').setAttribute('stroke', '#6C6E73');
+      }
+    }
+
+    function handleNext() {
+      switchSection('player-selection');
+    }
+  </script>
+</body>
+
+</html>

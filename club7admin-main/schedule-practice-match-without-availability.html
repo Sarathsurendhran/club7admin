@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component  data-page="practice-matches"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Practice Matches schedule</h6>
+        </div>
+        <div class="header-right">
+          <div class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </div>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2 tabcontent" id="Team1" style="display: block;">
+        <div  class="flex-align3 g2">
+          <a href="practice-matches.html">
+            <img src="images/left-arrow.png" style="width:18px;object-fit: contain;">
+          </a>
+          <h4>Schedule practice match without availability </h4>
+        </div>
+        <div class="row mt-3">
+          <div class="col-xl-4 col-md-6 col-item">
+            <h5 class="font-weight-600  mb-1">Practice Title</h5>
+            <input type="text" placeholder="Enter practice title" name="search" class="input w-100">
+          </div>
+          <div class="col-xl-4 col-md-6 col-item">
+            <h5 class="font-weight-600  mb-1">Date</h5>
+            <input type="date" placeholder="Select Match Date" name="search" class="input w-100">
+          </div>
+          <div class="col-xl-4 col-md-6 col-item">
+            <h5 class="font-weight-600  mb-1">Time</h5>
+            <input type="time" placeholder="Select match time" name="search" class="input w-100">
+          </div>
+          <div class="col-xl-4 col-md-6 col-item">
+            <h5 class="font-weight-600  mb-1">Venue</h5>
+            <select class="select-input w-100">
+              <option value="0">select mactch venue</option>
+              <option>Dubai</option>
+
+            </select>
+          </div>
+          <div class="col-xl-4 col-md-6 col-item">
+            <h5 class="font-weight-600  mb-1">Team 1 Name</h5>
+            <input type="text" placeholder="enter team 1 name" name="search" class="input w-100">
+          </div>
+          <div class="col-xl-4 col-md-6 col-item">
+            <h5 class="font-weight-600  mb-1">Team 1 Image / Logo</h5>
+            <div class="btn btn-outline-club7 px-4 g1" style="width: fit-content;">
+              <img src="images/upload2.png" style="width:20px;">
+              Upload
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0 mt-3" id="selecting-team" style="display: flex;">
+          <div class="col-lg-6 ps-0 pe-0 pe-lg-2">
+            <div class="row">
+              <div class="col-12 col-item py-0">
+                <h5 class="font-weight-600">All Players List <span class="font-weight-400">(120)</span></h5>
+              </div>
+              <div class="col-lg-4 col-item">
+                <select class="select-input w-100">
+                  <option>All Player</option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-item">
+                <select class="select-input w-100">
+                  <option>Category</option>
+                </select>
+              </div>
+             
+              
+            </div>
+            <div class="table-sec" style="overflow: auto;">
+              <div class="table1">
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="mt-2 d-flex justify-content-end">
+              <div class="btn btn-club72">
+                        Add All Selecetd
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pe-0 ps-0 ps-lg-2">
+            <div class="row align-items-center">
+              <div class="col-12 col-item py-0">
+                <h5 class="font-weight-600">Selected Players List <span class="font-weight-400">(0)</span></h5>
+              </div>
+              <div class="col-lg-4 col-item">
+                <h5>Add Players by category</h5>
+              </div>
+              <div class="col-lg-4 col-item">
+                <select class="select-input w-100">
+                  <option>-Select Category-</option>
+                  <option>Senior Team</option>
+                  <option>Junior Team</option>
+                </select>
+              </div>
+            </div>
+            <div class="table-sec">
+              <div class="table1">
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="mt-2 d-flex justify-content-end g2 mt-4">
+              <div class="btn btn-outline-club7 px-4">
+                       Back
+              </div>
+              <a class="btn btn-club7 px-4" onclick="openCity(event, 'Team2')">
+                       Next
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2 tabcontent" id="Team2">
+        <div  class="flex-align3 g2">
+          <a href="practice-matches.html">
+            <img src="images/left-arrow.png" style="width:18px;object-fit: contain;">
+          </a>
+          <h4>Schedule practice match without availability </h4>
+        </div>
+        <div class="row mt-3">
+          
+          
+          <div class="col-12 col-item my-1">
+            <h4 class="font-weight-600  mb-1">Team 2 Details</h4>
+          </div>
+          <div class="col-xl-4 col-md-6 col-item">
+            <h5 class="font-weight-600  mb-1">Team 2 Name</h5>
+            <input type="text" placeholder="Enter team 2 name" name="search" class="input w-100">
+          </div>
+          <div class="col-xl-4 col-md-6 col-item">
+            <h5 class="font-weight-600  mb-1">Team 2 Image / Logo</h5>
+            <div class="btn btn-outline-club7 px-4 g1" style="width: fit-content;">
+              <img src="images/upload2.png" style="width:20px;">
+              Upload
+            </div>
+          </div>
+        </div>
+        <div class="row mx-0 mt-3" id="selecting-team" style="display: flex;">
+          <div class="col-lg-6 ps-0 pe-0 pe-lg-2">
+            <div class="row">
+              <div class="col-12 col-item py-0">
+                <h5 class="font-weight-600">Total Players <span class="font-weight-400">(165)</span></h5>
+              </div>
+              <div class="col-lg-4 col-item">
+                <select class="select-input w-100">
+                  <option>All Player</option>
+                </select>
+              </div>
+              <div class="col-lg-4 col-item">
+                <select class="select-input w-100">
+                  <option>Category</option>
+                </select>
+              </div>
+             
+              
+            </div>
+            <div class="table-sec" style="overflow: auto;">
+              <div class="table1">
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2 " style="height:26px;">
+                        Add
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="mt-2 d-flex justify-content-end">
+              <div class="btn btn-club72">
+                        Add All Selecetd
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pe-0 ps-0 ps-lg-2">
+            <div class="row align-items-center">
+              <div class="col-12 col-item py-0">
+                <h5 class="font-weight-600">Selected Players List <span class="font-weight-400">(0)</span></h5>
+              </div>
+              <div class="col-lg-4 col-item">
+                <h5>Add Players by category</h5>
+              </div>
+              <div class="col-lg-4 col-item">
+                <select class="select-input w-100">
+                  <option>-Select Category-</option>
+                  <option>Senior Team</option>
+                  <option>Junior Team</option>
+                </select>
+              </div>
+            </div>
+            <div class="table-sec">
+              <div class="table1">
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-row"  >
+                  <div class="table-tr row m-0">
+                    <div class="pe-0 col-1  table-td">
+                      <div class="checkbox">
+                        <input type="checkbox" name="">
+                      </div>
+                    </div>
+                    <div class="col-9  table-td">
+                      <div class="flex-align3 g2">
+                        <img src="images/user1.png" class="user-dp2">
+                        <div>
+                          <div class="flex-align3 g2">
+                            <h5 class="font-weight-400">Anna Lee</h5>
+                          </div>
+                          <h6>Right hand batting | Right arm fast bowler | Wicket keeper  </h6>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div  class="col-2  table-td">
+                      <div class="btn btn-club72 px-2" style="height:26px;">
+                        Remove
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="mt-2 d-flex justify-content-end g2 mt-4">
+              <div class="btn btn-outline-club7 px-4" onclick="openCity(event, 'Team1')">
+                       Back
+              </div>
+              <a href="practice-matches2.html" class="btn btn-club7 disable px-4">
+                      Schedule
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="js/script.js"></script>
+  <style>
+    .tabcontent {
+    display: none;
+ 
+  }
+  </style>
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+ 
+</body>
+</html>

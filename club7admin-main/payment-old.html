@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component data-page="payment"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Payment</h6>
+        </div>
+        <div class="header-right">
+          <a href="notification.html" class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </a>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2" >
+        <ul class="nav nav-tabs" >
+          <li class="nav-item">
+            <button class="nav-link  active" id="payment_tab-tab" data-bs-toggle="tab" data-bs-target="#payment_tab" type="button" role="tab" aria-controls="payment_tab" aria-selected="false">Payment</button>
+          </li>
+          <li class="nav-item" >
+            <button class="nav-link" id="invoice_tab-tab" data-bs-toggle="tab" data-bs-target="#invoice_tab" type="button" role="tab" aria-controls="invoice_tab" aria-selected="true">Invoice</button>
+          </li>
+          <li class="nav-item" >
+            <button class="nav-link" id="tax_tab-tab" data-bs-toggle="tab" data-bs-target="#tax_tab" type="button" role="tab" aria-controls="tax_tab" aria-selected="true">Tax</button>
+          </li> 
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="payment_tab" role="tabpanel" aria-labelledby="payment_tab-tab">
+            <div class="nav inhouse-tabs mt-3 pt-1">
+              <label for="match" class="nav-link active flex-align3 g1 ps-0" id="membership" data-bs-toggle="tab" data-bs-target="#match_creation" type="button" role="tab" aria-controls="match_creation" aria-selected="true">
+                <input id="match" type="radio" name="creation_type" checked>
+                Membership
+              </label>
+              <label for="team" class="nav-link flex-align3 g1" id="tournament" data-bs-toggle="tab" data-bs-target="#team_creation" type="button" role="tab" aria-controls="team_creation" aria-selected="false">
+                <input id="team" type="radio" name="creation_type">
+                Tournament
+              </label>
+            </div>
+            <div class="tab-content" id="myTabContent2">
+              <div class="tab-pane fade show active" id="match_creation" role="tabpanel" aria-labelledby="membership">
+                <div class="container-payment">
+                  <div class="filter-bar mt-2" style="align-items: flex-end;">
+                    <div class="flex-align3 g3" style="flex-wrap: wrap;">
+                      <div class="card px-3 py-2 card-active" style="border-radius: 6px; width: 160px; border: 2px solid transparent; background-color: burlywood;">
+                        <h4 class="font-weight-400">All</h4>
+                        <h2 class="font-weight-600 mt-2" style="font-size: 20px;">58</h2>
+                      </div>
+                      <div class="card px-3 py-2" style="border-radius: 6px; width: 160px; border: 2px solid transparent; background-color: #2BB21966;">
+                        <h4 class="font-weight-400">Full Paid</h4>
+                        <h2 class="font-weight-600 mt-2" style="font-size: 20px;">18</h2>
+                      </div>
+                      <div class="card px-3 py-2" style="border-radius: 6px; width: 160px; border: 2px solid transparent; background-color: #EFE26E;">
+                        <h4 class="font-weight-400">Partially Paid</h4>
+                        <h2 class="font-weight-600 mt-2" style="font-size: 20px;">32</h2>
+                      </div>
+                      <div class="card px-3 py-2" style="border-radius: 6px; width: 160px; border: 2px solid transparent; background-color: #C3282E66;">
+                        <h4 class="font-weight-400">Not Paid</h4>
+                        <h2 class="font-weight-600 mt-2" style="font-size: 20px;">08</h2>
+                      </div>
+
+                    </div>
+                    <a href="fee_modification.html" class="btn btn-club7 px-4" >
+                      Fee modification
+                    </a>                
+                  </div>
+                  <div class="row mx-0 mt-3" style="row-gap:25px;">
+                    <div class="col-12 p-0">
+                      
+                      <div class="table-sec" style="overflow: auto; min-height: auto;">
+                        <table class="table1">
+                          <thead>
+                            <tr>
+                              <th>
+                                Members
+                              </th>
+                            
+                              <th >
+                                Category
+                              </th>
+                              <th >
+                                Fee
+                              </th>
+                              <th >
+                                Due Date
+                              </th>
+                              <th >
+                                Payment Date
+                              </th>
+                              <th >
+                                Payment Fee
+                              </th>
+                              <th>
+                                Status
+                              </th>
+                              <th>
+                                Pending
+                              </th>
+                              <th>
+                                Action
+                              </th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Senior  
+                              </td>
+                              <td >
+                                $450
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-success text-success">Full Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td >
+                                $0
+                              </td>
+                              <td >                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Junior
+                              </td>
+                              <td >
+                                $250
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 07 WED , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-warning" style="color: #845F00;">Partially Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td class="font-weight-600">
+                                $100
+                              </td>
+                              <td>
+                                <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#modification">Pay Now</a>                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Senior  
+                              </td>
+                              <td >
+                                $450
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-success text-success">Full Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td >
+                                $0
+                              </td>
+                              <td >                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Junior
+                              </td>
+                              <td >
+                                $250
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 07 WED , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-danger text-danger">Not Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td class="font-weight-600">
+                                $450
+                              </td>
+                              <td>
+                                <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#modification">Pay Now</a>                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Senior  
+                              </td>
+                              <td >
+                                $450
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-success text-success">Full Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td >
+                                $0
+                              </td>
+                              <td >                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Junior
+                              </td>
+                              <td >
+                                $250
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 07 WED , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-warning" style="color: #845F00;">Partially Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td class="font-weight-600">
+                                $100
+                              </td>
+                              <td>
+                                <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#modification">Pay Now</a>                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Senior  
+                              </td>
+                              <td >
+                                $450
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-success text-success">Full Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td >
+                                $0
+                              </td>
+                              <td >                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Junior
+                              </td>
+                              <td >
+                                $250
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 07 WED , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-danger text-danger">Not Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td class="font-weight-600">
+                                $450
+                              </td>
+                              <td>
+                                <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#modification">Pay Now</a>                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Senior  
+                              </td>
+                              <td >
+                                $450
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-success text-success">Full Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td >
+                                $0
+                              </td>
+                              <td >                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Junior
+                              </td>
+                              <td >
+                                $250
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 07 WED , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-warning" style="color: #845F00;">Partially Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td class="font-weight-600">
+                                $100
+                              </td>
+                              <td>
+                                <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#modification">Pay Now</a>                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Senior  
+                              </td>
+                              <td >
+                                $450
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-success text-success">Full Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td >
+                                $0
+                              </td>
+                              <td >                                
+                              </td>                              
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="flex-align3 g1">
+                                  <img src="images/user1.png" class="user-dp3">
+                                  <h5 class="">David Davis</h5>
+                                </div>
+                              </td>                              
+                              <td >
+                                Junior
+                              </td>
+                              <td >
+                                $250
+                              </td>
+                              <td>
+                                25/02/2024
+                              </td>
+                              <td >
+                                Aug 07 WED , 2023 
+                              </td>
+                              <td >
+                                <badge class="badge bg-soft-danger text-danger">Not Paid</badge>
+                              </td>
+                              <td>
+                                $450
+                              </td>
+                              <td class="font-weight-600">
+                                $450
+                              </td>
+                              <td>
+                                <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#modification">Pay Now</a>                                
+                              </td>                              
+                            </tr>
+                            
+                            
+                           
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                    </div>
+                   
+                  </div>
+                </div>
+               
+              </div>
+              <div class="tab-pane fade" id="team_creation" role="tabpanel" aria-labelledby="tournament">
+                <div class="container-payment">
+                  <div class="flex-align3 g3 mt-2" style="flex-wrap: wrap;">
+                    <div class="card px-3 py-2 card-active2" style="border-radius: 6px; width: 160px;">
+                      <h4 class="font-weight-400">All</h4>
+                      <h2 class="font-weight-600 mt-2" style="font-size: 20px;">6</h2>
+                    </div>
+                    <div class="card px-3 py-2" style="border-radius: 6px; width: 160px; border: 1px solid black;">
+                      <h4 class="font-weight-400">Full Paid</h4>
+                      <h2 class="font-weight-600 mt-2" style="font-size: 20px;">4</h2>
+                    </div>
+                    <div class="card px-3 py-2" style="border-radius: 6px; width: 160px; border: 1px solid black;">
+                      <h4 class="font-weight-400">Partially Paid</h4>
+                      <h2 class="font-weight-600 mt-2" style="font-size: 20px;">2</h2>
+                    </div>
+             
+
+                  </div>
+                  <div class="row mx-0 mt-3" style="row-gap:15px;">
+                    <div class="col-12 p-0 mt-2">
+                      <h5 class="text-gray">Scheduled Matches <span class="font-weight-600">06</span></h5>
+                    </div>
+                    <div class="col-xl-8 p-0">
+                      <div class="table-sec" style="overflow: auto; min-height: auto;">
+                        <table class="table1">
+                          <thead>
+                            <tr>
+                              <th>
+                                Title
+                              </th>
+                            
+                              <th >
+                                Date
+                              </th>
+                              <th >
+                                Players
+                              </th>
+                              <th >
+                                Total fee
+                              </th>
+                              <th>
+                                Collected fee
+                              </th>
+                              <th>
+                                Pending fee
+                              </th>
+                              <th>
+                                
+                              </th>
+                              
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="active">
+                              <td >
+                                T 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/radix.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr>
+                              <td >
+                                20 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/check3.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr">
+                              <td >
+                                T 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/radix.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr>
+                              <td >
+                                20 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/check3.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr>
+                              <td >
+                                20 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/check3.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr">
+                              <td >
+                                T 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/radix.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr>
+                              <td >
+                                20 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/check3.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr>
+                              <td >
+                                20 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/check3.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr">
+                              <td >
+                                T 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/radix.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+                            <tr>
+                              <td >
+                                20 20
+                              </td>                              
+                              <td >
+                                Aug 05 MON , 2023 
+                              </td>
+                              <td >
+                                35
+                              </td>
+                              
+                              <td >
+                                $350
+                              </td>
+                              <td >
+                                $260
+                              </td>
+                              <td > 
+                                $90                               
+                              </td>  
+                              <td>
+                                <img src="images/check3.png" class="user-dp4">
+                              </td>                            
+                            </tr>
+           
+                           
+                          </tbody>
+                        </table>
+                      </div>
+                      
+                    </div>
+                    <div class="col-xl-4  pe-0 ps-xl-3 ps-0">
+                     
+                      <div class="card-2 p-0" >
+                        <div class="card-2-head text-start p-3" style="flex-wrap:wrap;row-gap:10px;">
+                          
+                            <h5 class="font-weight-500"><span class="font-weight-600">T 20 |</span> Series</h5>
+                            <h5 class="font-weight-500 pt-2 text-gray">11-02-2024 | 10:00 am - 12:00 pm</h5>
+
+                        </div>
+                        <hr class="m-0">
+                        <div class="card-2-body text-start">
+                          <div class="table-sec2">
+                                <table class="table1">
+                                  <thead>
+                                    <tr>
+                                      <th>
+                                        Players (35)
+                                      
+                                      </th>
+                                      <th>
+                                        Fee
+                                      </th>
+                                      <th>
+
+                                      </th>
+                                      
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <img src="images/single-check.png" class="user-dp4">
+                                      </td>
+                                      <td>
+                                        11-12-2024
+                                      </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        
+                                      </td>
+                                      <td>
+                                        
+                                      </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <img src="images/single-check.png" class="user-dp4">
+                                      </td>
+                                      <td>
+                                        11-12-2024
+                                      </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        
+                                      </td>
+                                      <td>
+                                        
+                                      </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                       Later
+                                      </td>
+                                      <td>
+                                        <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#payment_action">Pay Now</a>  
+                                      </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                     
+                                      </td>
+                                      <td>
+                                      </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                      </td>
+                                      <td>
+                                      </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                       Later
+                                      </td>
+                                      <td>
+                                        <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#payment_action">Pay Now</a>  
+                                      </td>
+                                      
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <div class="flex-align3 g2">
+                                          <img src="images/user1.png" class="user-dp3">
+                                          <h5 class="">David Davis</h5>
+                                        </div>
+                                      </td>
+                                      <td>
+                                       Later
+                                      </td>
+                                      <td>
+                                        <a class="text-danger font-weight-500 cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#payment_action">Pay Now</a>  
+                                      </td>
+                                      
+                                    </tr>
+              
+      
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="invoice_tab" role="tabpanel" aria-labelledby="invoice_tab-tab">
+            
+            <div>
+              <div class="filter-bar mt-3">
+                <h5 class="font-weight-400 text-4">Total invoice<span class="font-weight-600 ps-2">1</span></h5>
+                <div style="position: relative; height: 40px;">
+                  <div class="dropdown drop-down-official">
+                    <a  class="btn btn-club72 px-5 dropdown-toggle" style="background: initial;" type="button" data-bs-toggle="dropdown">
+                      Invoice
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li  style="cursor: pointer;"><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#new_invoice">+ New Invoice</a></li>
+                      <li style="cursor: pointer;"><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#invoice_format">Invoice format</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+              
+              </div>
+              <div class="table-sec mt-4" style="overflow: auto; min-height: auto;">
+                <table class="table1">
+                  <thead>
+                    <tr>
+                      <th class="text-gray">
+                        Issue
+                      </th>
+                    
+                      <th class="text-gray" >
+                        Invoice number
+                      </th>
+                      <th class="text-gray" >
+                        User Name
+                      </th>
+                      <th  class="text-gray">
+                        Invoice amount
+                      </th>
+                      <th class="text-gray">
+                        Due date
+                      </th>
+                      <th class="text-gray">
+                        Status
+                      </th>
+                      <th class="text-gray">
+                        Paid
+                      </th>
+                      <th class="text-gray">
+                        balance
+                      </th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr onclick="window.location.href='invoice.html';" style="cursor: pointer;">
+                      <td >
+                        Jan 10, 2024 
+                      </td>
+                      <td >
+                        $150.00
+                      </td>
+                      
+                      <td>
+                        <div class="flex-align3 g1">
+                          <img src="images/user1.png" class="user-dp4">
+                          <h5 class="">Sarah Taylor</h5>
+                        </div>
+                      </td>                              
+                      <td >
+                        10052  
+                      </td>
+                      <td >
+                        Jan 12, 2024
+                      </td>
+                      
+                      <td >
+                        <badge class="badge bg-soft-info">Issued</badge>
+                      </td>
+                      <td >
+                        $0.00
+                      </td>
+                      <td >
+                        $150.00
+                      </td>
+                                                  
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>f
+              
+              
+            </div>
+            
+          </div>
+          <div class="tab-pane fade" id="tax_tab" role="tabpanel" aria-labelledby="tax_tab-tab">
+            <div class="filter-bar py-4">
+              <h5 class="font-weight-400 text-4">Total   <span class="font-weight-600 ps-2">1</span></h5>
+
+              
+              <a data-bs-toggle="modal" data-bs-target="#add_tax" class="btn btn-club7">
+                  + Add tax
+              </a>
+              
+            </div>
+           
+          </div>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="modal fade" id="modification" tabindex="-1" aria-labelledby="modificationLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-0">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom p-4">
+              <h3>Payment action</h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2">
+              <div class="flex-align g2 px-4 py-3" style="background: #343745; flex-wrap:wrap;row-gap:10px;">
+                <div class="flex-align3 g2">
+                  <img src="images/user1.png" class="user-dp">
+                  <div class="text-start">
+                    <h4 class="font-weight-600">Chris Anderson</h4>
+                    <h5 class="font-weight-400 pt-1">Category : Senior  </h5>
+                  </div>
+                </div>
+                <div class="">
+                  <button class="btn bg-soft-warning py-2" style="color: #845F00;height: 30px;">Partially Paid</button>
+                  <h4 class="mt-2 font-weight-400" style="text-align: right;">Balance: <span class="font-weight-600">$100</span></h4>
+                 
+                </div>
+              </div>
+              <div class=" px-4 py-4">
+                <div class="flex-align3 g2">
+                  <h4 class="font-weight-400">Payment method</h4>
+                </div>
+                <div class="flex-align3 g4 mt-3">
+                  <label for="cash" class="flex-align3 g1 cursor-pointer">
+                    <input id="cash" type="radio" name="payment" checked style="accent-color: #c3282e; width: 18px; height: 18px;">
+                    <h4 class="font-weight-500">Cash</h4>
+                  </label>
+                  <label for="online" class="flex-align3 g1 cursor-pointer">
+                    <input id="online" type="radio" name="payment" style="accent-color: #c3282e; width: 18px; height: 18px;">
+                    <h4 class="font-weight-500">Online</h4>
+                  </label>
+                  <label for="partial" class="flex-align3 g1 cursor-pointer">
+                    <input id="partial" type="radio" name="payment" style="accent-color: #c3282e; width: 18px; height: 18px;">
+                    <h4 class="font-weight-500">Partial payment</h4>
+                  </label>
+                </div>
+              </div>
+              <div class=" px-4 py-4">
+                <div class="flex-align3 g2">
+                  <h4 class="font-weight-400">Select status</h4>
+                </div>
+                <select class="w-100 mt-2" style="min-width: 150px;">
+                  <option>Pending</option>
+
+                </select>
+              </div>
+             
+              <div class="modal-footer2 d-flex justify-content-end g2 disable p-4">
+                <button type="button" class="btn btn-club7 px-4">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="payment_action" tabindex="-1" aria-labelledby="payment_actionLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-0">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom p-4">
+              <h3>Payment action</h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2">
+              <div class="flex-align g2 px-4 py-3" style="background: #343745; flex-wrap:wrap;row-gap:10px;">
+                <div class="flex-align3 g2">
+                  <img src="images/user1.png" class="user-dp">
+                  <div class="text-start">
+                    <h4 class="font-weight-600">Chris Anderson</h4>
+                  </div>
+                </div>
+                <div class="">
+                  <h3 class="mt-2 font-weight-400" style="text-align: right;"> <span class="font-weight-600">T 20 | </span>Series</h3>
+                  <h5 class="text-gray mt-2">11-02-2024 | 10:00 am - 12:00 pm</h5>
+                 
+                </div>
+              </div>
+              <div class=" px-4 py-4">
+                <div class="flex-align3 g2">
+                  <h4 class="font-weight-400">Payment method</h4>
+                </div>
+                <div class="flex-align3 g4 mt-3">
+                  <label for="cash2" class="flex-align3 g1 cursor-pointer">
+                    <input id="cash2" type="radio" name="payment2" checked style="accent-color: #c3282e; width: 18px; height: 18px;">
+                    <h4 class="font-weight-500">Cash</h4>
+                  </label>
+                  <label for="online2" class="flex-align3 g1 cursor-pointer">
+                    <input id="online2" type="radio" name="payment2" style="accent-color: #c3282e; width: 18px; height: 18px;">
+                    <h4 class="font-weight-500">Online</h4>
+                  </label>
+                  <label for="partial2" class="flex-align3 g1 cursor-pointer">
+                    <input id="partial2" type="radio" name="payment2" style="accent-color: #c3282e; width: 18px; height: 18px;">
+                    <h4 class="font-weight-500">Partial payment</h4>
+                  </label>
+                </div>
+              </div>
+              <style>
+                .payment-section{
+                  display: none;
+                }
+              </style>
+              <div id="cash_payment" class=" px-4 py-4 payment-section">
+                <div class="flex-align3 g2">
+                  <h4 class="font-weight-400">Select status</h4>
+                </div>
+                <div class="flex-align3 g4 mt-3">
+                  <label for="pending" class="flex-align3 g1 cursor-pointer">
+                    <input id="pending" type="radio" name="status" checked style="accent-color: #c3282e; width: 18px; height: 18px;">
+                    <h4 class="font-weight-500">Pending</h4>
+                  </label>
+                  <label for="recieved" class="flex-align3 g1 cursor-pointer">
+                    <input id="recieved" type="radio" name="status" style="accent-color: #c3282e; width: 18px; height: 18px;">
+                    <h4 class="font-weight-500">Received</h4>
+                  </label>
+
+                </div>
+              </div>
+              <div id="online_payment" class=" px-4 py-4 payment-section">
+                <div class="flex-align3 g2">
+                  <h4 class="font-weight-400">Transaction ID</h4>
+                </div>
+                <input type="text" placeholder="Enter transaction ID"  class="input w-100 mt-3">
+
+              </div>
+              <div id="partial_payment" class=" px-4 py-4 payment-section">
+                <div class="flex-align3 g2">
+                  <h4 class="font-weight-400">Amount</h4>
+                </div>
+                <input type="text" placeholder="Enter payment amount"  class="input w-100 mt-3">
+
+              </div>
+             
+              <div class="modal-footer2 d-flex justify-content-end g2 disable p-4">
+                <button type="button" class="btn btn-club7 px-4">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="add_tax" tabindex="-1" aria-labelledby="add_taxLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 p-4">
+              <h3 style="font-size: 20px;">Create tax</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2 px-4 pb-4 pt-3">
+              
+              <div >
+                <div class="mb-4 pb-2">
+                  <h5 class="font-weight-500 mb-1 ">Province / State / category - tax title</h5>
+                  <input type="text" placeholder="Eg: GST /  VAT / Ontario"  class="input w-100" >
+
+                </div>
+                <div class="mb-4 pb-2">
+                  <h5 class="font-weight-500 mb-1 ">Percentage of tax</h5>
+                  <input type="text" placeholder="Percentage of tax"  class="input w-100" >
+
+                </div>
+                <div class="mb-4 pb-2">
+                  <h5 class="font-weight-500 mb-1 ">Description</h5>
+                  <input type="text"  class="input w-100" >
+
+                </div>
+              </div>
+             
+              <div class="modal-footer2 d-flex justify-content-end g2 ">
+                <button type="button" class="btn btn-club7 px-5">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="invoice_format" tabindex="-1" aria-labelledby="invoice_formatLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom">
+              <h3>Invoice format</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2 p-md-3 p-0">
+              <h4 class="text-gray mt-3">Business address and contact details, tax information and logo.</h4>
+              
+              <div class="row mt-3" style="row-gap: 20px;">
+                    <div class="col-lg-4 col-md-6 col-item" style="padding-right: 20px; max-width: 200px;">
+                      <h5 class="font-weight-500 mb-2">Logo</h5>
+                      <div class="image-picker image-picker2" style="height: 150px;">
+                        <input type="file" accept="image/*" class="input w-100">
+                        <div class="image-picker-tab">
+                          <img src="images/upload3.png">
+                          Upload image
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+              </div> 
+              <div class="row mt-3" style="row-gap: 20px;">
+                        
+                <div class="col-12">
+                  <h5 class="font-weight-500 mb-1 ">Business name</h5>
+                  <input type="text" placeholder="Enter business name"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Phone</h5>
+                  <input type="text" placeholder="Enter phone"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Email</h5>
+                  <input type="text" placeholder="Enter email"  class="input w-100" >
+                </div>
+                <div class="col-12">
+                  <h5 class="font-weight-500 mb-1 ">Website</h5>
+                  <input type="text" placeholder="Enter website address"  class="input w-100" >
+                </div>
+                
+              </div>
+              <div class="row mt-5" style="row-gap: 20px;">
+                  
+                <div class="col-12">
+                  <h4 class="font-weight-600 mb-1 ">Address</h4>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Street address</h5>
+                  <input type="text" placeholder="Enter address"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">City</h5>
+                  <input type="text" placeholder="Enter city"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Sate / Province</h5>
+                  <input type="text" placeholder="Enter Sate / Province"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Zip / Postal code</h5>
+                  <input type="text" placeholder="Enter Zip / Postal code"  class="input w-100" >
+                </div>
+               
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Country</h5>
+                  <select class="select-input w-100" >
+                    <option>Select Country</option>
+                    <option>India</option>
+                  </select>
+
+                </div>
+                
+              </div>
+              <div class="row mt-5" style="row-gap: 20px;">
+                  
+                <div class="col-12">
+                  <h4 class="font-weight-600 mb-1 ">Tax</h4>
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Tax name</h5>
+                  <input type="text" placeholder="Enter tax name"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Tax registration number</h5>
+                  <input type="text" placeholder="Enter tax registration number"  class="input w-100" >
+                </div>
+                
+              </div>
+              <div class="modal-footer2 d-flex justify-content-end g2 mt-5">
+                <button type="button" class="btn btn-club7 px-5">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="new_invoice" tabindex="-1" aria-labelledby="new_invoiceLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+      <div class="modal-content">
+       
+        <div class="modal-body p-0">
+            
+            <div class="flex-align moadl-head2 p-4 border-bottom">
+              <h3>New invoice</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2 ">
+              
+              <div class="row p-4" style="row-gap: 20px;">
+                <div class="col-12">
+                  <h5 class="font-weight-500 mb-1 ">User</h5>
+                  <select class="select-input w-100" >
+                    <option>Search user </option>
+                  </select>
+
+                </div>    
+                <div class="col-12">
+                  <h5 class="font-weight-500 mb-1 ">Invoice ID</h5>
+                  <input type="text" value="1002"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Invoice date</h5>
+                  <input type="date"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Due date</h5>
+                  <input type="date"  class="input w-100" >
+                </div>
+                
+              </div>
+              <hr>
+              <div class="p-4">
+                <h4 class="font-weight-500">Items</h4>
+                
+                <table class="table1 modal-table mt-4">
+                  <thead>
+                    <tr style="background-color: #F3F4F60A;">
+                      <th style="padding-left: 15px;"> 
+                        Items
+                      </td>
+                      <th>
+                        Quantity
+                      </th>
+                      <th >
+                        Price
+                      </th>
+                      <th style="text-align: right;">
+                        Amount (USD)
+                      </th>
+                      
+                    </tr>
+                  </thead>        
+                  <tbody>
+                    <tr >
+                      <td style="padding-left: 5px;">
+                        <div class="flex-align3 g2 text-danger">
+                          <img src="images/add2.png" style="width: 20px; height: 20px;">
+                          Add item                        
+                        </div>
+                      </td>
+                      <td>
+                       
+                      </td>
+                      <td>
+                        Subtotal
+                      </td>
+                      <td style="text-align: right;">
+                        0.00
+                      </td>
+                    
+                    </tr>
+
+                    
+                  </tbody>
+                  <tfoot>
+                    <tr >
+                      <td  style="padding-left: 5px;">
+                        <div class="flex-align3 g2 text-danger cursor-pointer" data-bs-toggle="modal" data-bs-target="#add_tax2">
+                          <img src="images/add2.png" style="width: 20px; height: 20px;">
+                          Add tax                     
+                        </div>
+                      </td>
+                      <td>
+                       
+                      </td>
+                      <td style="border-top: 1px solid lightgray;" class="font-weight-600">
+                       Total
+                      </td>
+                      <td style="border-top: 1px solid lightgray;" style="text-align: right;">
+                        0.00
+                      </td>
+                    
+                    </tr>
+
+                    
+                  </tfoot>
+                </table>
+              </div>
+              <hr>
+              <div class="p-4">
+                <div class="pb-4">
+                  <h4 class="font-weight-500 mb-2">Note</h4>
+                  <textarea type="text" placeholder="Thank you for your purchase"  class="w-100"  style="min-height: 100px;"></textarea>
+
+                </div>
+                <label for="email_invoice" class="flex-align3 g2 cursor-pointer">
+                  <input id="email_invoice" type="checkbox">
+                  <h5 class="font-weight-600">Email invoice</h5>
+                </label>
+              </div>
+            </div> 
+
+            <div class="modal-footer2 d-flex justify-content-end g2 p-4">
+              <button class="btn btn-club72 px-3" style="background: initial;" data-bs-toggle="modal" data-bs-target="#schedule_later">
+                Schedule for later
+              </button>
+              <button type="button" class="btn btn-club7 px-5">Save</button>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="add_tax2" tabindex="-1" aria-labelledby="add_tax2Label" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 p-4">
+              <h3 style="font-size: 20px;">Add tax</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2 p-4">
+              
+              <div>
+                <div class="mb-3 pb-3">
+                  <h5 class="font-weight-500 mb-1 ">Select tax</h5>
+                  <select class="select-input w-100" >
+                    <option>VAT</option>
+                  </select>
+
+                </div>
+               
+              </div>
+             
+              <div class="modal-footer2 d-flex justify-content-end g2 ">
+                <button type="button" class="btn btn-club7 px-5">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="schedule_later" tabindex="-1" aria-labelledby="schedule_laterLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-0">
+            
+            <div class="flex-align moadl-head2 p-4 ">
+              <h3>Schedule for later</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2 ">
+              <h4 class="text-gray px-4">Select a future date and time for when the invoice needs to be sent.</h4>
+              <div class="row p-4" style="row-gap: 20px;">
+                
+                <div class="col-12">
+                  <h5 class="font-weight-500 mb-1 ">Date</h5>
+                  <input type="date"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Time</h5>
+                  <input type="time"  class="input w-100" >
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Time zone</h5>
+                  <select class="select-input w-100" >
+                    <option>America</option>
+                    <option>India</option>
+
+                  </select>
+
+                </div>    
+                
+              </div>
+
+            </div> 
+
+            <div class="modal-footer2 d-flex justify-content-end g2 p-4">
+
+              <button type="button" class="btn btn-club7 px-4">Schedule invoice</button>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  
+  <script>
+    // Get the buttons
+    const scheduleBtn = document.getElementById("schedule-btn");
+    const leagueMatchBtn = document.getElementById("league_match_btn");
+    
+    // Get the elements to be displayed and hidden
+    const scheduleMatch = document.getElementById("fee_modification");
+    const leagueMatch = document.getElementById("league_match");
+    
+    // Add click event listener to the schedule button
+    scheduleBtn.addEventListener("click", function() {
+        // Toggle the display style of the fee_modification element
+        if (scheduleMatch.style.display === "none") {
+            scheduleMatch.style.display = "block";
+        } else {
+            scheduleMatch.style.display = "none";
+        }
+        
+        // Hide the league_match element
+        leagueMatch.style.display = "none";
+    });
+    
+    // Add click event listener to the league match button
+    leagueMatchBtn.addEventListener("click", function() {
+        // Hide the fee_modification element
+        scheduleMatch.style.display = "none";
+        
+        // Display the league_match element
+        leagueMatch.style.display = "block";
+    });
+    
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      const sections = {
+          cash: document.getElementById('cash_payment'),
+          online: document.getElementById('online_payment'),
+          partial_payment: document.getElementById('partial_payment')
+      };
+
+      const paymentMethods = document.getElementsByName('payment2');
+
+      function updateVisibility() {
+          for (const section in sections) {
+              sections[section].style.display = 'none';
+          }
+
+          if (document.getElementById('cash2').checked) {
+              sections.cash.style.display = 'block';
+          } else if (document.getElementById('online2').checked) {
+              sections.online.style.display = 'block';
+          } else if (document.getElementById('partial2').checked) {
+              sections.partial_payment.style.display = 'block';
+          }
+      }
+
+      // Initialize visibility on page load
+      updateVisibility();
+
+      // Add event listeners to radio buttons
+      paymentMethods.forEach(radio => {
+          radio.addEventListener('change', updateVisibility);
+      });
+  });
+</script>
+  
+
+
+   
+     
+
+</body>
+</html>

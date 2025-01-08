@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component data-page="payment"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Payment</h6>
+        </div>
+        <div class="header-right">
+          <a href="notification.html" class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </a>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2" >
+        
+            <div  class="flex-align3 g4" style="max-width: 800px; align-items: flex-start; margin: 0 auto;">
+              <div  class="flex-align3 g4 mt-4 cursor-pointer">
+                <a href="payment.html">
+                    <img src="images/rounded-left.png" style="width:30px;object-fit: contain;">
+                </a>
+                
+                
+              </div>
+              <div class="mt-4 w-100"  style="padding-left: 10px; ">
+                <div class="flex-align3 g3 mb-4">
+                  <h4 style="font-size: 22px; font-weight: 600;">Invoice#10052</h4>
+                  <badge class="badge bg-soft-info">Issued</badge>
+                </div>
+                <div class="flex-align g3 pb-2" style="flex-wrap: wrap;">
+                  <div class="flex-align3" style="gap: 30px; flex-wrap: wrap;">
+                    <div>
+                      <h5 class="text-gray mb-2">Due date</h5>
+                      <h4>Jan 12, 2024</h4>
+                    </div>
+                    <div>
+                      <h5 class="text-gray mb-2">Amount</h5>
+                      <h4>$150</h4>
+                    </div>
+                    <div>
+                      <h5 class="text-gray mb-2">Invoiced to</h5>
+                      <div class="flex-align3 g1">
+                        <img src="images/user1.png" class="user-dp4">
+                        <h5 class="">David Davis</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-outline-secondary px-3">
+                    <img src="images/reminder.png" class="me-2" style="width: 12px;height: 12px;">
+                    Reminder
+                  </button>
+                </div>
+                <hr>
+                <div class="pt-2 pb-5">
+                  <h5 class="pb-3 font-weight-600">Payments</h5>
+                  <button class="btn btn-club72 px-3" style="background: initial;" data-bs-toggle="modal" data-bs-target="#payment_recieved">
+                    <img src="images/add2.png" style="width: 20px;height: 20px;" class="me-1">
+                    Payment received
+                  </button>
+                </div>
+                <hr>
+                <div class="flex-align g3 pb-2" style="flex-wrap: wrap;">
+                  <div class="flex-align3 g2" style="flex-wrap: wrap;">
+                    
+                    <button class="btn btn-outline-secondary px-3">
+                      <img src="images/invoice_pdf.png" class="me-2" style="width: 12px;height: 12px;">
+                      Invoice PDF
+                    </button>
+                    <button class="btn btn-outline-secondary px-3">
+                      <img src="images/link2.png" class="me-2" style="width: 14px;height: 14px;">
+                      Payment link
+                    </button>
+                    
+                  </div>
+                  <button class="btn btn-outline-secondary px-3">
+                    <img src="images/edit.png" class="me-2" style="width: 12px;height: 12px;">
+                    Edit
+                  </button>
+                </div>
+                <div class="rounded p-3 mt-3" style="background-color: #F1F1F1;">
+                  <img src="images/invoice.png" style="width: 100%;">
+
+                </div>
+                
+              </div>
+              
+            </div>
+          
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="payment_recieved" tabindex="-1" aria-labelledby="payment_recievedLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 p-3">
+              <h3 style="font-size: 20px;">Payment received</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2 p-3">
+              
+              <div class="row" style="row-gap: 30px;">
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Invoice amount</h5>
+                  <div class="input-with-btn flex-align3 mt-3">
+                    <input type="text" value="150.00" class="input w-100" style="padding-left: 70px;">
+                    <div class="px-3"  style="position: absolute;left: 0px; background-color: #F0F0F0; color: #11111199; display: flex;
+                    align-items: center; height: 100%; border:1px solid lightgray; border-radius: 6px 0 0 6px;">
+                      CAD
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Amount received</h5>
+                  <input type="text" value="0"  class="input w-100" >
+
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Payment mode</h5>
+                  <select class="select-input w-100" >
+                    <option>Select payment mode</option>
+
+                    <option>Cash</option>
+                    <option>Online</option>
+                  </select>
+
+                </div>
+                <div class="col-md-6">
+                  <h5 class="font-weight-500 mb-1 ">Payment date</h5>
+                  <input type="date"   class="input w-100" >
+
+                </div>
+                <div class="col-12">
+                  <h5 class="font-weight-500 mb-1 ">Transaction ID</h5>
+                  <input type="text" placeholder="Enter transaction ID"  class="input w-100" >
+
+                </div>
+                <div class="col-12">
+                  <h5 class="font-weight-500 mb-1 ">Payment note</h5>
+                  <textarea type="text" placeholder="Enter payment note"  class="w-100"  style="min-height: 100px;"></textarea>
+
+                </div>
+              </div>
+             
+              <div class="modal-footer2 d-flex justify-content-end g2 mt-4">
+                <button type="button" class="btn btn-club7 px-5">Done</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+ 
+
+   
+     
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component data-page="payment"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Payment</h6>
+        </div>
+        <div class="header-right">
+          <a href="notification.html" class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </a>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2" >
+        <div class="card">
+          <div class="flex-align g3">
+            <h3>Fee Modification</h3>
+            <a href="payment.html">
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 25px;height: 25px; ">
+            </a>
+
+          </div>
+          <h5 class="text-danger mt-5 cursor-pointer" data-bs-toggle="modal" data-bs-target="#add_new">+ Add new</h5>
+          <style>
+            .input-container {
+              position: relative;
+            }
+            .edit-icon {
+              cursor: pointer;
+              width: 13px;
+              height: 13px;
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+            .edit-input{
+               
+                border: 1px solid #11111140 ;
+                margin-top: 5px;
+            }
+            .edit-input[readonly] {
+              background-color: #202127;
+            }
+          </style>
+           <div class="row mt-4">
+            <div class="col-xl-3 col-md-6">
+              <h5 class="font-weight-400 text-gray mb-1">Senior</h5>
+              <div class="input-container">
+                <input type="text" value="$450" name="search" class="input w-100 edit-input" readonly>
+                <img src="images/edit2.png" class="edit-icon">
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <h5 class="font-weight-400 text-gray mb-1">Junior</h5>
+              <div class="input-container">
+                <input type="text" value="$250" name="search" class="input w-100 edit-input" readonly>
+                <img src="images/edit2.png" class="edit-icon">
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <h5 class="font-weight-400 text-gray mb-1">Social</h5>
+              <div class="input-container">
+                <input type="text" value="$300" name="search" class="input w-100 edit-input" readonly>
+                <img src="images/edit2.png" class="edit-icon">
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <h5 class="font-weight-400 text-gray mb-1">Women</h5>
+              <div class="input-container">
+                <input type="text" value="$300" name="search" class="input w-100 edit-input" readonly>
+                <img src="images/edit2.png" class="edit-icon">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end g2  py-4">
+            <button type="button" class="btn btn-club7 px-5">Save</button>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="add_new" tabindex="-1" aria-labelledby="add_newLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 p-4">
+              <h3 style="font-size: 20px;">Add tax</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;height: 30px;">
+            </div>
+            <div class="modal-body2 p-4">
+              
+              <div>
+                <div class="mb-3 pb-3">
+                  <h5 class="font-weight-500 mb-1 text-dark2">Category</h5>
+                  <input type="text" placeholder="Enter category name"  class="input w-100" >
+
+                </div>
+                <div class="mb-3 pb-3">
+                  <h5 class="font-weight-500 mb-1 text-dark2">Amount</h5>
+                  <input type="text" placeholder="Enter amount"  class="input w-100" >
+
+                </div>
+              </div>
+             
+              <div class="modal-footer2 d-flex justify-content-end g2 ">
+                <button type="button" class="btn btn-club7 px-5">Save</button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  
+  <script>
+    document.querySelectorAll('.edit-icon').forEach(icon => {
+      icon.addEventListener('click', function() {
+        const input = this.previousElementSibling;
+        input.readOnly = !input.readOnly;
+        if (!input.readOnly) {
+          input.focus();
+        }
+      });
+    });
+  </script>
+  
+
+
+   
+     
+
+</body>
+</html>

@@ -1,0 +1,2928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="components/sidebar.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+  <div class="site">
+    <sidebar-component data-page="team-selection"></sidebar-component>
+    
+    <div class="site-right">
+      <div class="header-top">
+        <div class="header-left">
+          <h6 class="header-title">Team selection & Announcement</h6>
+        </div>
+        <div class="header-right">
+          <a href="notification.html" class="notification">
+            <img src="images/header-notification2.png">
+            <span>1</span>
+          </a>
+          <div class="header-profile">
+            <div class="header-profile-name">
+              <h6>Emily Smith</h6>
+              <span class="text-gray">Admin</span>
+            </div>
+            <img src="images/user.png">
+            
+          </div>
+        </div>
+      </div>
+      <div class="main-section main-section2" >
+        <ul class="nav nav-tabs" >
+          <li class="nav-item" >
+            <button class="nav-link active" id="league_tournament-tab" data-bs-toggle="tab" data-bs-target="#league_tournament" type="button" role="tab" aria-controls="league_tournament" aria-selected="true">League / Tournament</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link" id="inhouse_match-tab" data-bs-toggle="tab" data-bs-target="#inhouse_match" type="button" role="tab" aria-controls="inhouse_match" aria-selected="false">Inhouse Match</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="league_tournament" role="tabpanel" aria-labelledby="league_tournament-tab">
+            
+            <div class="tab1" id="league_match">
+              <div class="filter-bar mt-4 px-3" style="align-items: flex-end;">
+                <h5 class="font-weight-500 text-4">League / Tournament 05</h5>
+                
+              </div>
+              <div class="row mx-0 mt-3" style="row-gap:25px;">
+                <div class="col-xl-12">
+                  <div class="table-sec" style="overflow: auto; min-height: auto;">
+                    <table class="table1">
+                      <thead>
+                        <tr style="">
+                          <th>
+                            Match Title
+                          </th>
+                          <th>Division
+                          </th>
+                          <th >
+                            Date
+                          </th>
+                          <th >
+                            Time
+                          </th>
+                          
+                          <th >
+                            Status
+                          </th>
+                          <th></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr >
+                          <td>
+                            Mississauga club7 U16 <span class="text-danger">VS</span> ActionZone U16
+
+                          </td>
+                          <td>U16 - Juniors
+                          </td>
+                          
+                          <td >
+                            Aug 05 MON , 2023 
+                          </td>
+                          <td >
+                            11:00 am
+                          </td>
+                          
+                          <td id="schedule-btn">
+                            <a class="badge-warning badge" style="font-size:12px;color:white; padding: 6px 20px!important;width: fit-content; background-color: #FFA235AD;min-width: 125px; border: 1px solid #FFA235AD;">Pending</a>
+                          </td>
+                          <td>
+
+                          </td>
+                          
+                        </tr>
+                        <tr >
+                          <td>
+                            MISSISSAUGA club7 - MAROON <span class="text-danger">VS</span> MS Boys/Ignites CC
+
+
+                          </td>
+                          <td>Second Division
+
+                          </td>
+                          <td >
+                            Aug 05 MON , 2023 
+                          </td>
+                          <td >
+                            11:00 am
+                          </td>
+                          
+                          <td data-bs-toggle="modal" data-bs-target="#announced">
+                            <a class="badge-success badge" style="font-size:12px;padding: 6px 20px!important;width: fit-content;min-width: 125px; background-color: #2BB219AD; border: 1px solid #2BB219AD;">Announced</a>
+                          </td>
+                          <td>
+                            <a class="text-danger cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#view-team">View team</a>
+                          </td>
+                          
+                        </tr>
+                        <tr >
+                          <td>
+                            Mississauga club7 CC <span class="text-danger">VS</span> Power One  Deccan Chargers
+
+
+
+                          </td>
+                          <td>Second Division
+
+                          </td>
+                          <td >
+                            Aug 05 MON , 2023 
+                          </td>
+                          <td >
+                            11:00 am
+                          </td>
+                          
+                          <td data-bs-toggle="modal" data-bs-target="#announced">
+                            <a class="badge-success badge" style="font-size:12px;padding: 6px 20px!important;width: fit-content;min-width: 125px; background-color: #2BB219AD; border: 1px solid #2BB219AD;">Announced</a>
+                          </td>
+                          <td>
+                            <a class="text-danger cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#view-team">View team</a>
+                          </td>
+                          
+                        </tr>
+                        
+                        <tr >
+                          <td>
+                            Mississauga club7 U14 <span class="text-danger">VS</span> Superstar Colts U14
+ 
+
+                          </td>
+                          <td>U14 - Juniors
+                          </td>
+                          
+                          <td >
+                            Aug 05 MON , 2023 
+                          </td>
+                          <td >
+                            11:00 am
+                          </td>
+                          
+                          <td >
+                            <a class="badge-danger badge" style="font-size:12px;padding: 6px 20px!important;width: fit-content;  background-color: #C3282EAD; border: 1px solid #C3282EAD;">Expired</a>
+                          </td>
+                          <td>
+                            <a class="text-danger cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#view-team">View team</a>
+                          </td>
+                          
+                        </tr>
+                        <tr >
+                          <td>
+                            MISSISSAUGA club7 - MAROON <span class="text-danger">VS</span> MS Boys/Ignites CC
+ 
+
+                          </td>
+                          <td>First Division
+                          </td>
+                          
+                          <td >
+                            Aug 05 MON , 2023 
+                          </td>
+                          <td >
+                            11:00 am
+                          </td>
+                          
+                          <td >
+                            <a class="badge-danger badge" style="font-size:12px;padding: 6px 20px!important;width: fit-content;  background-color: #C3282EAD; border: 1px solid #C3282EAD;">Expired</a>
+                          </td>
+                          <td>
+                            <a class="text-danger cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#view-team">View team</a>
+                          </td>
+                          
+                        </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div> 
+                </div>
+              </div>             
+            </div>
+            <div class="tab2" id="schedule_match" style="display: none;">
+              <div  class="flex-align3 g4 mt-4">
+                <a class=" cursor-pointer" id="league_match_btn">
+                    <img src="images/rounded-left.png" style="width:34px;object-fit: contain;">
+                </a>
+                <div class="w-100 py-2 px-4" style="overflow: auto; min-height: auto;">
+                  <table class="w-100">
+                    <tbody>
+                      <tr >
+                        <td>
+                          <h5 class="text-gray">Match Title</h5>
+                          <h5 class="mt-2">Match Title</h5>
+
+                        </td>
+                      
+                        <td >
+                          <h5 class="text-gray">Date</h5>
+                          <h5 class="mt-2">Aug 05 MON , 2023 </h5>
+                        </th>
+                        <td >
+                          <h5 class="text-gray">Time</h5>
+                          <h5 class="mt-2">11:00 am</h5>
+                        </td>
+                        <td >
+                          <h5 class="text-gray">Venue</h5>
+                          <h5 class="mt-2">huron heights</h5>
+                        </td>
+                        <td >
+                          <h5 class="text-gray">Tournament fee</h5>
+                          <h5 class="mt-2">$40.00</h5>
+                        </td>
+                        <td >
+                          <h5 class="text-gray">Status</h5>
+                          <a class="badge-warning badge mt-2" style="font-size:12px;color:white; padding: 6px 20px!important;width: fit-content; background-color: #FFA235AD;min-width: 125px; border: 1px solid #FFA235AD;">Pending</a>
+
+                        </td>
+                        
+                      </tr>
+                    </tbody>
+                    
+                  </table>
+                </div> 
+                
+              </div>
+              <div class="flex-align3 mt-4  g2 mb-3" style="border: none;">
+                <h5 class="font-weight-500 text-4">Players <span class="font-weight-600 ">16</span></h5>
+                <h5 class="font-weight-600 text-primary cursor-pointer" data-bs-toggle="modal" data-bs-target="#addNew">+ Add player</h5>
+              </div>
+              
+              <div style="overflow: auto;
+                      width: 100%; background-color: #2a2a33;">
+                        <table class="table1 ">
+                          <thead>
+                            <tr>
+                              <th>
+                                Players
+                              </th>
+                              <th>Player role</th>
+                              <th>Played games</th>
+                              <th>Club ID</th>
+                              <th>Membership fee</th>
+                              <th>Match fee</th>
+                              <th>
+                                <select class="select-input border-0 py-1 ps-1" style="padding-right: 25px;">
+                                  <option selected disabled>Status</option>
+                                  <option>Morning</option>
+                                  <option>Afternoon</option>
+                                  <option>Eveneing</option>
+                                  <option>Not Available</option>
+
+
+                                </select>
+                              </th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+                              <td class="text-success">Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                15
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td></td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #FF7A0026;">
+                                  <select class="select-input " style="border: none;color: #D1B97D;">
+                                    <option>Not Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td class="text-warning">Later</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-danger">Not Paid</td>
+                              <td class="text-warning">Later</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                                Captain<img src="images/edit3.png" class="user-dp5">
+                               </div>
+                              </td>
+                              <td>
+                                15
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td></td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #FF7A0026;">
+                                  <select class="select-input " style="border: none;color: #D1B97D;">
+                                    <option>Not Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                30
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-warning">Partially Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                                Vice captain<img src="images/edit3.png" class="user-dp5">
+                               </div>
+                              </td>
+                              <td>
+                                15
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-warning">Partially Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                                Wicket Keeper<img src="images/edit3.png" class="user-dp5">
+                               </div>
+                              </td>
+                              <td>
+                                18
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                15
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td></td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #FF7A0026;">
+                                  <select class="select-input " style="border: none;color: #D1B97D;">
+                                    <option>Not Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td class="text-warning">Later</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-danger">Not Paid</td>
+                              <td class="text-warning">Later</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            
+                            
+                           
+                          </tbody>
+                        </table>
+              </div>
+                
+              
+              <div class="mt-4 d-flex justify-content-end g2">
+                <div class="btn btn-outline-secondary px-4">
+                          cancel
+                </div>
+                <div class="btn btn-club74 px-4" >
+                         Announce Now
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="inhouse_match" role="tabpanel" aria-labelledby="inhouse_match-tab">
+            <div class="tab1" id="league_match2">
+              <div class="filter-bar mt-4 px-3" style="align-items: flex-end;">
+                <h5 class="font-weight-500 text-4">League / Tournament 05</h5>
+                
+              </div>
+              <div class="row mx-0 mt-3" style="row-gap:25px;">
+                <div class="col-xl-12">
+                  <div class="table-sec" style="overflow: auto; min-height: auto;">
+                    <table class="table1">
+                      <thead>
+                        <tr style="">
+                          <th>
+                            Match Title
+                          </th>
+                          <th>Division
+                          </th>
+                        
+                          <th >
+                            Date
+                          </th>
+                          <th >
+                            Time
+                          </th>
+                          <th >
+                            Venue
+                          </th>
+                          
+                          <th >
+                            Status
+                          </th>
+                          <th></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr >
+                          <td>
+                            Team A <span class="text-danger">VS</span> Team B
+                          </td>
+                          <td>U16 - Juniors
+                          </td>
+                          <td >
+                            Aug 05 MON , 2023 
+                          </td>
+                          <td >
+                            11:00 am
+                          </td>
+                          <td>
+                            huron heights
+                          </td>
+                          
+                          <td id="schedule-btn2" >
+                            <a class="badge-warning badge" style="font-size:12px;color:white; padding: 6px 20px!important;width: fit-content; background-color: #FFA235AD;min-width: 125px; border: 1px solid #FFA235AD;">Pending</a>
+                          </td>
+                          <td>
+
+                          </td>
+                          
+                        </tr>
+                        <tr >
+                          <td>
+                            Team C <span class="text-danger">VS</span> Team H
+
+                          </td>
+                          <td>Second Division
+
+                          </td>
+                          <td >
+                            Aug 05 MON , 2023 
+                          </td>
+                          <td >
+                            11:00 am
+                          </td>
+                          <td>
+                            huron heights
+                          </td>
+                         
+                          <td data-bs-toggle="modal" data-bs-target="#announced">
+                            <a class="badge-success badge" style="font-size:12px;padding: 6px 20px!important;width: fit-content;min-width: 125px; background-color: #2BB219AD; border: 1px solid #2BB219AD;">Announced</a>
+                          </td>
+                          <td>
+                            <a class="text-danger cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#view-team">View team</a>
+                          </td>
+                          
+                        </tr>
+                        <tr >
+                          <td>
+                            Team A <span class="text-danger">VS</span> Team B
+
+                          </td>
+                          <td>Premier
+
+                          </td>
+                          <td >
+                            Aug 05 MON , 2023 
+                          </td>
+                          <td >
+                            11:00 am
+                          </td>
+                          <td>
+                            huron heights
+                          </td>
+                          
+                          <td data-bs-toggle="modal" data-bs-target="#announced">
+                            <a class="badge-success badge" style="font-size:12px;padding: 6px 20px!important;width: fit-content; min-width: 125px; background-color: #2BB219AD; border: 1px solid #2BB219AD;">Announced</a>
+                          </td>
+                          <td>
+                            <a class="text-danger cursor-pointer" style="text-decoration: underline;" data-bs-toggle="modal" data-bs-target="#view-team">View team</a>
+                          </td>
+                          
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                  </div> 
+                </div>
+              </div>             
+            </div>
+            <div class="tab2" id="schedule_match2" style="display: none;">
+              <div  class="flex-align3 g4 mt-4">
+                <a class=" cursor-pointer" id="league_match_btn2">
+                    <img src="images/rounded-left.png" style="width:34px;object-fit: contain;">
+                </a>
+                <div class="w-100 py-2 px-4" style="overflow: auto; min-height: auto;">
+                  <table class="w-100">
+                    <tbody>
+                      <tr >
+                        <td>
+                          <h5 class="text-gray">Match Title</h5>
+                          <h5 class="mt-2">Match Title</h5>
+
+                        </td>
+                      
+                        <td >
+                          <h5 class="text-gray">Date</h5>
+                          <h5 class="mt-2">Aug 05 MON , 2023 </h5>
+                        </th>
+                        <td >
+                          <h5 class="text-gray">Time</h5>
+                          <h5 class="mt-2">11:00 am</h5>
+                        </td>
+                        <td >
+                          <h5 class="text-gray">Venue</h5>
+                          <h5 class="mt-2">huron heights</h5>
+                        </td>
+                        <td >
+                          <h5 class="text-gray">Tournament fee</h5>
+                          <h5 class="mt-2">$40.00</h5>
+                        </td>
+                        <td >
+                          <h5 class="text-gray">Status</h5>
+                          <a class="badge-warning badge mt-2" style="font-size:12px;color:white; padding: 6px 20px!important;width: fit-content; background-color: #FFA235AD;min-width: 125px; border: 1px solid #FFA235AD;">Pending</a>
+
+                        </td>
+                        
+                      </tr>
+                    </tbody>
+                    
+                  </table>
+                </div> 
+                
+              </div>
+              <ul class="nav nav-tabs mt-4 align-items-center g1 mb-3" style="border: none;">
+                <li class="nav-item" >
+                  <button class="nav-link-btn active" id="team_a-tab2" data-bs-toggle="tab" data-bs-target="#team_a2" type="button" role="tab" aria-controls="team_a2" aria-selected="true">Team GA (20)</button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link-btn" id="team_b-tab2" data-bs-toggle="tab" data-bs-target="#team_b2" type="button" role="tab" aria-controls="team_b2" aria-selected="false">Team G (20)</button>
+                </li>
+                <h5 class="font-weight-600 text-primary cursor-pointer ps-3" data-bs-toggle="modal" data-bs-target="#addNew">+ Add player</h5>
+              </ul>
+              <div class="tab-content" id="myTabContent3">
+                <div class="tab-pane fade show active" id="team_a2" role="tabpanel" aria-labelledby="team_a-tab2" >
+                
+                  <div style="overflow: auto;
+                      width: 100%; background-color: #2a2a33;">
+                        <table class="table1 ">
+                          <thead>
+                            <tr>
+                              <th>
+                                Players
+                              </th>
+                              <th>Player role</th>
+                              <th>Played games</th>
+                              <th>Club ID</th>
+                              <th>Membership fee</th>
+                              <th>Match fee</th>
+                              <th>
+                                <select class="select-input border-0 py-1 ps-1" style="padding-right: 25px;">
+                                  <option selected disabled>Status</option>
+                                  <option>Morning</option>
+                                  <option>Afternoon</option>
+                                  <option>Eveneing</option>
+                                  <option>Not Available</option>
+
+
+                                </select>
+                              </th>
+                              <th></th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+                              <td class="text-success">Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                15
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td></td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #FF7A0026;">
+                                  <select class="select-input " style="border: none;color: #D1B97D;">
+                                    <option>Not Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td class="text-warning">Later</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-danger">Not Paid</td>
+                              <td class="text-warning">Later</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                                Captain<img src="images/edit3.png" class="user-dp5">
+                               </div>
+                              </td>
+                              <td>
+                                15
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td></td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #FF7A0026;">
+                                  <select class="select-input " style="border: none;color: #D1B97D;">
+                                    <option>Not Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                30
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-warning">Partially Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                                Vice captain<img src="images/edit3.png" class="user-dp5">
+                               </div>
+                              </td>
+                              <td>
+                                15
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-warning">Partially Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                                Wicket Keeper<img src="images/edit3.png" class="user-dp5">
+                               </div>
+                              </td>
+                              <td>
+                                18
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td class="text-success">Paid</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                15
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td></td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #FF7A0026;">
+                                  <select class="select-input " style="border: none;color: #D1B97D;">
+                                    <option>Not Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-success">Paid</td>
+                              <td class="text-warning">Later</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            <tr>                              
+                              <td>
+                                <div class="flex-align3 g2">
+                                  <input type="checkbox">
+                                  <img src="images/user1.png" class="user-dp2">
+                                  <div>
+                                    <h5 class="">David Davis</h5>
+                                    <h6 class="text-gray">Right hand batting</h6>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                               <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                              </td>
+                              <td>
+                                20
+                              </td>
+                              <td>ID1002</td>
+
+                              <td class="text-danger">Not Paid</td>
+                              <td class="text-warning">Later</td>
+                              <td>
+                                <div class="select-badge" style="  background-color: #2BB21926;">
+                                  <select class="select-input " style="border: none; color: #2BB219;">
+                                    <option>Available</option>
+                                  </select>
+                                </div>
+                              </td>
+                              <td style="text-align: center;">
+                                <img src="images/rounded-delete.png" class="user-dp2">
+                              </td>
+                            </tr>
+                            
+                            
+                           
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="team_b2" role="tabpanel" aria-labelledby="team_b-tab2" >
+                
+                
+                  <div style="overflow: auto;
+                  width: 100%; background-color: #2a2a33;">
+                    <table class="table1 ">
+                      <thead>
+                        <tr>
+                          <th>
+                            Players
+                          </th>
+                          <th>Player role</th>
+                          <th>Played games</th>
+                          <th>Club ID</th>
+                          <th>Membership fee</th>
+                          <th>Match fee</th>
+                          <th>
+                            <select class="select-input border-0 py-1 ps-1" style="padding-right: 25px;">
+                              <option selected disabled>Status</option>
+                              <option>Morning</option>
+                              <option>Afternoon</option>
+                              <option>Eveneing</option>
+                              <option>Not Available</option>
+
+
+                            </select>
+                          </th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            20
+                          </td>
+                          <td>ID1002</td>
+                          <td class="text-success">Paid</td>
+                          <td class="text-success">Paid</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            15
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-success">Paid</td>
+                          <td></td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #FF7A0026;">
+                              <select class="select-input " style="border: none;color: #D1B97D;">
+                                <option>Not Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            20
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-success">Paid</td>
+                          <td class="text-warning">Later</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger" data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            20
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-danger">Not Paid</td>
+                          <td class="text-warning">Later</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                            Captain<img src="images/edit3.png" class="user-dp5">
+                           </div>
+                          </td>
+                          <td>
+                            15
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-success">Paid</td>
+                          <td></td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #FF7A0026;">
+                              <select class="select-input " style="border: none;color: #D1B97D;">
+                                <option>Not Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            30
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-warning">Partially Paid</td>
+                          <td class="text-success">Paid</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                            Vice captain<img src="images/edit3.png" class="user-dp5">
+                           </div>
+                          </td>
+                          <td>
+                            15
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-warning">Partially Paid</td>
+                          <td class="text-success">Paid</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <div class="flex-align3 g1 text-danger cursor-pointer" data-bs-toggle="modal"  data-bs-target="#changerole">
+                            Wicket Keeper<img src="images/edit3.png" class="user-dp5">
+                           </div>
+                          </td>
+                          <td>
+                            18
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-success">Paid</td>
+                          <td class="text-success">Paid</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            20
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-success">Paid</td>
+                          <td class="text-success">Paid</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            15
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-success">Paid</td>
+                          <td></td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #FF7A0026;">
+                              <select class="select-input " style="border: none;color: #D1B97D;">
+                                <option>Not Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            20
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-success">Paid</td>
+                          <td class="text-warning">Later</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        <tr>                              
+                          <td>
+                            <div class="flex-align3 g2">
+                              <input type="checkbox">
+                              <img src="images/user1.png" class="user-dp2">
+                              <div>
+                                <h5 class="">David Davis</h5>
+                                <h6 class="text-gray">Right hand batting</h6>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                           <button class="btn btn-outline-danger"  data-bs-toggle="modal"  data-bs-target="#addrole" style="border-radius: 30px;">Add role</button>
+                          </td>
+                          <td>
+                            20
+                          </td>
+                          <td>ID1002</td>
+
+                          <td class="text-danger">Not Paid</td>
+                          <td class="text-warning">Later</td>
+                          <td>
+                            <div class="select-badge" style="  background-color: #2BB21926;">
+                              <select class="select-input " style="border: none; color: #2BB219;">
+                                <option>Available</option>
+                              </select>
+                            </div>
+                          </td>
+                          <td style="text-align: center;">
+                            <img src="images/rounded-delete.png" class="user-dp2">
+                          </td>
+                        </tr>
+                        
+                        
+                       
+                      </tbody>
+                    </table>
+          </div>
+                  
+                </div>
+              </div>
+              <div class="mt-4 d-flex justify-content-end g2">
+                <div class="btn btn-outline-secondary px-4">
+                          cancel
+                </div>
+                <div class="btn btn-club74 px-4" data-bs-toggle="modal" data-bs-target="#success">
+                          Schedule
+                </div>
+              </div>
+            </div>
+              
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="addNew" tabindex="-1" aria-labelledby="addNewLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+      <div class="modal-content">
+       
+        <div class="modal-body px-0 pt-0 pb-4">
+            <div class="flex-align moadl-head2 p-5">
+              <h3>Add player</h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;font-size:12px;">
+            </div>
+            <div class="modal-body2"> 
+              <div class="added-player ">          
+                <div class="px-5">
+                  <h5 class="font-weight-600">Added Players (3)</h5>
+                </div>
+                <div class="px-5 py-3 "  style="overflow: auto;
+                width: 100%;">
+                  <table class="table1  modal-table2">                   
+                    <tbody>
+                      <tr>                       
+                        <td>
+                          <div class="flex-align3 g2">
+                            <input type="checkbox">
+                            <img src="images/user1.png" class="user-dp2">
+                            <div>
+                              <h5 class="">David Davis</h5>
+                              <h6 class="text-gray">Right hand batting</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <h6>20</h6>
+                          <h6 class="text-gray">Played games</h6>
+                        </td>
+                        <td>
+                          <h6 class="text-success">Paid</h6>
+                          <h6 class="text-gray">Membership fee</h6>
+                        </td>
+                        <td  style="text-align: center;">
+                          <img src="images/rounded-delete.png" class="user-dp2">
+                        </td>
+                      </tr>
+                      <tr>
+                        
+                        <td>
+                          <div class="flex-align3 g2">
+                            <input type="checkbox">
+                            <img src="images/user1.png" class="user-dp2">
+                            <div>
+                              <h5 class="">David Davis</h5>
+                              <h6 class="text-gray">Right hand batting</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <h6>20</h6>
+                          <h6 class="text-gray">Played games</h6>
+                        </td>
+                        <td>
+                          <h6 class="text-success">Paid</h6>
+                          <h6 class="text-gray">Membership fee</h6>
+                        </td>
+                        <td  style="text-align: center;">
+                          <img src="images/rounded-delete.png" class="user-dp2">
+                        </td>
+                      </tr>
+                      <tr>
+                        
+                        <td>
+                          <div class="flex-align3 g2">
+                            <input type="checkbox">
+                            <img src="images/user1.png" class="user-dp2">
+                            <div>
+                              <h5 class="">David Davis</h5>
+                              <h6 class="text-gray">Right hand batting</h6>
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <h6>20</h6>
+                          <h6 class="text-gray">Played games</h6>
+                        </td>
+                        <td>
+                          <h6 class="text-danger">Not Paid</h6>
+                          <h6 class="text-gray">Membership fee</h6>
+                        </td>
+                        <td  style="text-align: center;">
+                          <img src="images/rounded-delete.png" class="user-dp2">
+                        </td>
+                      </tr>
+        
+
+                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <hr class="mx-5">
+              <div class="add-player"  style="overflow: auto;
+              width: 100%;">          
+                <div class="px-5">
+                      <div class="col-lg-4 col-md-6 col-item">
+                        <h5 class="font-weight-500 mb-1">Team</h5>
+                        <select class="w-100" style="min-width: 150px;">
+                          <option>Team A</option>
+                          <option>Team B</option>
+                          <option selected>Team C</option>
+
+                        </select>
+                      </div>                   
+                </div>
+                <table class="table1 modal-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        Player name
+                      </td>
+                      <th>
+                        Age
+                      </th>
+                      <th >
+                        Played games
+                      </th>
+                      <th>Membership fee</th>
+                      <th></th>
+                    </tr>
+                  </thead>        
+                  <tbody>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: center;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: center;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-danger font-weight-400">Not Paid</h5>
+                      </td>
+                      <td style="text-align: center;">
+                        <div class="btn btn-club73 disable px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: center;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: center;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: center;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td style="text-align: center;">
+                        <div class="btn btn-club73  px-2" style="height:28px;">
+                          Add
+                        </div>
+                      </td>
+                    </tr>
+
+                  
+
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <hr>
+            <div class="modal-footer2 d-flex justify-content-end g2 pt-3 mx-5">
+              <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-club7 px-4">Done</button>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="announced" tabindex="-1" aria-labelledby="announcedLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+      <div class="modal-content">
+       
+        <div class="modal-body px-0 pt-0 pb-4">
+            <div class="flex-align moadl-head2 px-4 mx-2 py-4">
+              <h3>Team  </h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;font-size:12px;">
+            </div>
+            <div class="modal-body2"> 
+              
+              <div class="w-100 py-2 px-4 mb-3" style="overflow: auto; min-height: auto;">
+                <table class="w-100">
+                  <tbody>
+                    <tr >
+                      <td class="px-2">
+                        <h5 class="text-gray">Match Title</h5>
+                        <h5 class="mt-2 font-weight-500">Match Title</h5>
+
+                      </td>
+                    
+                      <td >
+                        <h5 class="text-gray">Date</h5>
+                        <h5 class="mt-2 font-weight-500">Aug 05 MON , 2023 </h5>
+                      </th>
+                      <td  class="px-2">
+                        <h5 class="text-gray">Time</h5>
+                        <h5 class="mt-2 font-weight-500">11:00 am</h5>
+                      </td>
+                      <td  class="px-2">
+                        <h5 class="text-gray">Venue</h5>
+                        <h5 class="mt-2 font-weight-500">huron heights</h5>
+                      </td>
+                      <td  class="px-2">
+                        <h5 class="text-gray">Tournament fee</h5>
+                        <h5 class="mt-2 font-weight-500">$40.00</h5>
+                      </td>
+                      <td  class="px-2">
+                        <h5 class="text-gray">Status</h5>
+                        <a class="badge-success badge mt-2" style="font-size:12px;padding: 6px 20px!important;width: fit-content;min-width: 125px; background-color: #2BB219AD; border: 1px solid #2BB219AD;">Announced</a>
+
+                      </td>
+                      
+                    </tr>
+                  </tbody>
+                  
+                </table>
+              </div> 
+              <div class="add-player"  style="overflow: auto;
+              width: 100%;">          
+               
+                <table class="table1 modal-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        Player name
+                      </td>
+                      <th>
+                        Age
+                      </th>
+                      <th >
+                        Played games
+                      </th>
+                      <th>Membership fee</th>
+                      
+                    </tr>
+                  </thead>        
+                  <tbody>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Partially Paid</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-danger font-weight-400">Not Paid</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      
+                      <td>
+                        <div class="flex-align3 g2">
+                          <input type="checkbox">
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                      20
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Partially Paid</h5>
+                      </td>
+                      
+                    </tr>                  
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <hr>
+            <div class="modal-footer2 d-flex justify-content-end g2 pt-3 mx-5">
+              <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-club7 px-4">Done</button>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="view-team" tabindex="-1" aria-labelledby="view-teamLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-lg">
+      <div class="modal-content">
+       
+        <div class="modal-body px-0 pt-0 pb-4">
+            <div class="flex-align moadl-head2 px-4 mx-2 py-4">
+              <h3>Team  </h3>
+              <img src="images/rounded-close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 30px;font-size:12px;">
+            </div>
+            <div class="modal-body2"> 
+              
+              <div class="w-100 py-2 px-4 mb-3" style="overflow: auto; min-height: auto;">
+                <div class="row m-0" style="row-gap:20px">
+                  <div class="px-2 col-md-4 col-lg-6">
+                    <h5 class="text-gray">Match Title</h5>
+                    <h5 class="mt-2 font-weight-500">MISSISSAUGA club7 - MAROON
+                      <span class="text-danger">VS</span> MS Boys/Ignites CC
+                      </h5>
+
+                  </div>
+                
+                  <div class="col-md-2 col-lg-2">
+                    <h5 class="text-gray">Division
+                    </h5>
+                    <h5 class="mt-2 font-weight-500">Second Division
+                    </h5>
+                  </div>
+                  <div class="col-md-2 col-lg-2">
+                    <h5 class="text-gray">Date</h5>
+                    <h5 class="mt-2 font-weight-500">06/16/2024
+                    </h5>
+                  </div>
+                  <div  class="col-md-2 col-lg-2">
+                    <h5 class="text-gray">Time</h5>
+                    <h5 class="mt-2 font-weight-500">11:00 am</h5>
+                  </div>
+                  <div  class="col-md-2 col-lg-2">
+                    <h5 class="text-gray">Venue</h5>
+                    <h5 class="mt-2 font-weight-500">huron heights</h5>
+                  </div>
+                  <div  class="col-md-2 col-lg-2">
+                    <h5 class="text-gray">Tournament fee</h5>
+                    <h5 class="mt-2 font-weight-500">$40.00</h5>
+                  </div>
+                  <div  class="col-md-2 col-lg-2">
+                    <h5 class="text-gray">Status</h5>
+                    <a class="badge-success badge mt-2" style="font-size:12px;padding: 6px 20px!important;width: fit-content;min-width: 125px; background-color: #2BB219AD; border: 1px solid #2BB219AD;">Announced</a>
+
+                  </div>
+                  
+                </div>
+              </div> 
+              <div class="add-player"  style="overflow: auto;
+              width: 100%;">          
+               <h5 class="my-2 px-4 mx-3 font-weight-500">MISSISSAUGA club7 - MAROON
+                <span class="text-danger">VS</span> MS Boys/Ignites CC
+                </h5>
+                <table class="table1 modal-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        Player name
+                      </td>
+                      <th>
+                        Played games
+                      </th>
+                      <th>
+                        Club ID 
+                      </th>
+                      <th >
+                        Membership fee
+                      </th>
+                      <th>Match fee</th>
+                      
+                    </tr>
+                  </thead>        
+                  <tbody>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        ID0012
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Later</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user3.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        20
+                      </td>
+                      <td>
+                        ID0013
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Later</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user2.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                          <h5 class="text-gray ps-4">Captain</h5>
+
+                        </div>
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        ID0012
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Later</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        ID0012
+                      </td>
+                      <td>
+                        <h5 class="text-danger font-weight-400">Not Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Later</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                          <h5 class="text-gray ps-4">Vice Captain</h5>
+
+                        </div>
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        ID0012
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                          <h5 class="text-gray ps-4">Wicket keeper </h5>
+
+                        </div>
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        ID0012
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Partially Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-success font-weight-400">Paid</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        ID0012
+                      </td>
+                      <td>
+                        <h5 class="text-danger font-weight-400">Not Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Later</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        ID0012
+                      </td>
+                      <td>
+                        <h5 class="text-danger font-weight-400">Not Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Later</h5>
+                      </td>
+                      
+                    </tr>
+                    <tr >
+                      <td>
+                        <div class="flex-align3 g2">
+                          
+                          <img src="images/user1.png" class="user-dp2">
+                          <div>
+                            <h5 class="">David Davis</h5>
+                            <h6 class="text-gray">Right hand batting</h6>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        ID0012
+                      </td>
+                      <td>
+                        <h5 class="text-danger font-weight-400">Not Paid</h5>
+                      </td>
+                      <td>
+                        <h5 class="text-warning font-weight-400">Later</h5>
+                      </td>
+                      
+                    </tr>
+                               
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- <hr>
+            <div class="modal-footer2 d-flex justify-content-end g2 pt-3 mx-5">
+              <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-club7 px-4">Done</button>
+            </div> -->
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="addrole" tabindex="-1" aria-labelledby="addroleLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom">
+              <h3>Add player role</h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2 p-md-3 p-0">
+              
+              <div class="row mt-3" style="row-gap: 20px; align-items: center;">
+                <div class="col-md-5 col-item" style="padding-right: 20px;">
+                  <div class="official-card rounded overflow-hidden">
+                    <div class="dropdown drop-down-official">
+                      <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                      <ul class="dropdown-menu">
+                         <li ><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit_ex">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                    <img src="images/official2.png">
+                    <div class="p-2">
+                      <h4 class="ellipsis font-weight-600 pb-1 text-center">Jackson</h4>
+                      <h6 class="font-weight-300 text-center text-gray">President</h6>
+                    </div>
+  
+                  </div>
+                </div>
+                
+                
+                <div class="col-md-7 col-item">
+                  
+                  <div>
+                    <h5 class="font-weight-500 mb-2">Add player role</h5>
+                      <div class="dropdown" >
+                        <div class="select-input-btn"   data-bs-toggle="dropdown"  style="min-width: 120px;">
+                          Select role
+                        </div>
+                        <ul class="dropdown-menu"  style="white-space: nowrap;">
+                          <li class="py-1 px-3 cursor-pointer">
+                            Captain
+                          </li>
+                          <li class="py-1 px-3 cursor-pointer">
+                            Vice Captain
+                          </li>
+                          <li class="py-1 px-3 cursor-pointer">
+                            Wicket Keeper
+                          </li>
+                          <li class="py-1 px-3 cursor-pointer">
+                            None
+                          </li>
+                          <li class="py-1 px-3 cursor-pointer text-danger"  data-bs-toggle="modal"  data-bs-target="#addnewrole">
+                            + Add new role
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      
+                  </div>
+                </div>
+                
+                
+                
+          </div>
+          <div class="modal-footer2 d-flex justify-content-end g2 pt-5">
+            <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-club7 px-4">Save</button>
+          </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="addnewrole" tabindex="-1" aria-labelledby="addnewroleLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom">
+              <h3>Add new role</h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2 py-5">
+              
+              <div>
+                <h5 class="font-weight-500 mb-2">Change role to</h5>
+                <input type="type" placeholder="Enter role name" name="" class="input w-100">
+                  
+              </div>
+                
+                
+            </div>
+            <div class="modal-footer2 d-flex justify-content-end g2">
+              <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-club7 px-4">Save</button>
+            </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="changerole" tabindex="-1" aria-labelledby="changeroleLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-md">
+      <div class="modal-content">
+       
+        <div class="modal-body p-4">
+            
+            <div class="flex-align moadl-head2 pb-4 border-bottom">
+              <h3>Change player role</h3>
+              <img src="images/close.png" data-bs-dismiss="modal" style="cursor: pointer;width: 20px;height: 20px;">
+            </div>
+            <div class="modal-body2 p-md-3 p-0">
+              
+              <div class="row mt-3" style="row-gap: 20px; align-items: center;">
+                <div class="col-md-5 col-item" style="padding-right: 20px;">
+                  <div class="official-card rounded overflow-hidden">
+                    <div class="dropdown drop-down-official">
+                      <img src="images/dots.png" class="dropdown-toggle" type="button" data-bs-toggle="dropdown" style="width:15px;height: 15px;object-fit: contain;">
+                      <ul class="dropdown-menu">
+                         <li ><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#edit_ex">Edit</a></li>
+                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                      </ul>
+                    </div>
+                    <img src="images/official2.png">
+                    <div class="p-2">
+                      <h4 class="ellipsis font-weight-600 pb-1 text-center">Jackson</h4>
+                      <h6 class="font-weight-300 text-center text-gray">President</h6>
+                    </div>
+  
+                  </div>
+                </div>
+                
+                
+                <div class="col-md-7 col-item">
+                  
+                  <div>
+                    <h5 class="font-weight-500 mb-2">Change player role</h5>
+                      <div class="dropdown" >
+                        <div class="select-input-btn"   data-bs-toggle="dropdown"  style="min-width: 120px;">
+                          Select role
+                        </div>
+                        <ul class="dropdown-menu"  style="white-space: nowrap;">
+                          <li class="py-1 px-3 cursor-pointer">
+                            Captain
+                          </li>
+                          <li class="py-1 px-3 cursor-pointer">
+                            Vice Captain
+                          </li>
+                          <li class="py-1 px-3 cursor-pointer">
+                            Wicket Keeper
+                          </li>
+                          <li class="py-1 px-3 cursor-pointer">
+                            None
+                          </li>
+                          <li class="py-1 px-3 cursor-pointer text-danger"  data-bs-toggle="modal"  data-bs-target="#addnewrole">
+                            + Add new role
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      
+                  </div>
+                </div>
+                
+                
+                
+          </div>
+          <div class="modal-footer2 d-flex justify-content-end g2 pt-5">
+            <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-club7 px-4">Save</button>
+          </div>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/script.js"></script>
+  <script>
+    // Get the buttons
+    const scheduleBtn = document.getElementById("schedule-btn");
+    const leagueMatchBtn = document.getElementById("league_match_btn");
+    
+    // Get the elements to be displayed and hidden
+    const scheduleMatch = document.getElementById("schedule_match");
+    const leagueMatch = document.getElementById("league_match");
+    
+    // Add click event listener to the schedule button
+    scheduleBtn.addEventListener("click", function() {
+        // Toggle the display style of the schedule_match element
+        if (scheduleMatch.style.display === "none") {
+            scheduleMatch.style.display = "block";
+        } else {
+            scheduleMatch.style.display = "none";
+        }
+        
+        // Hide the league_match element
+        leagueMatch.style.display = "none";
+    });
+    
+    // Add click event listener to the league match button
+    leagueMatchBtn.addEventListener("click", function() {
+        // Hide the schedule_match element
+        scheduleMatch.style.display = "none";
+        
+        // Display the league_match element
+        leagueMatch.style.display = "block";
+    });
+    
+  </script>
+  <script>
+    // Get the buttons
+    const scheduleBtn2 = document.getElementById("schedule-btn2");
+    const leagueMatchBtn2 = document.getElementById("league_match_btn2");
+    
+    // Get the elements to be displayed and hidden
+    const scheduleMatch2 = document.getElementById("schedule_match2");
+    const leagueMatch2 = document.getElementById("league_match2");
+    
+    // Add click event listener to the schedule button
+    scheduleBtn2.addEventListener("click", function() {
+        // Toggle the display style of the schedule_match element
+        if (scheduleMatch2.style.display === "none") {
+            scheduleMatch2.style.display = "block";
+        } else {
+            scheduleMatch2.style.display = "none";
+        }
+        
+        // Hide the league_match element
+        leagueMatch2.style.display = "none";
+    });
+    
+    // Add click event listener to the league match button
+    leagueMatchBtn2.addEventListener("click", function() {
+        // Hide the schedule_match element
+        scheduleMatch2.style.display = "none";
+        
+        // Display the league_match element
+        leagueMatch2.style.display = "block";
+    });
+    
+  </script>
+
+<script>
+// Get the buttons
+const createBtn = document.getElementById("create-btn");
+const inhouseBtn = document.getElementById("inhouse_btn");
+
+// Get the elements to be displayed and hidden
+const createMatch = document.getElementById("create_match");
+const inhouseMatch = document.getElementById("inhouse_tab_match");
+
+// Add click event listener to the create button
+createBtn.addEventListener("click", function() {
+    // Display the create_match element
+    createMatch.style.display = "block";
+    
+    // Hide the inhouse_match element
+    inhouseMatch.style.display = "none";
+});
+
+// Add click event listener to the inhouse button
+inhouseBtn.addEventListener("click", function() {
+    // Display the inhouse_match element
+    inhouseMatch.style.display = "block";
+    
+    // Hide the create_match element
+    createMatch.style.display = "none";
+});
+
+  
+</script>
+
+   
+     
+
+</body>
+</html>
