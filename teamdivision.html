@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create New Division</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
 
   <style>
     * {
@@ -452,10 +453,68 @@
         justify-content: flex-end !important;
       }
     }
+
+
+    .matchManagement_nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #282c34;
+      border-bottom: 1px solid #000;
+      padding-bottom: 31px;
+    }
+
+    .matchManagement_nav a {
+      font-size: 16px;
+      color: #007bff;
+      margin: 0 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .matchManagement_nav a:hover {
+      text-decoration: underline;
+    }
+
+    .rounded-tick {
+      margin-left: 8px;
+      color: green;
+    }
+
+    .text-decoration-warning {
+      color: #ffc107;
+    }
+
+    .circle-ellipsis {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background-color: #ffc107;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    .circle-ellipsis i.active {
+      color: white;
+    }
   </style>
 </head>
 
 <body>
+  <!-- Match Management Navigation -->
+  <div class="matchManagement_nav">
+    <a href="match-management.html?openModal=true&tab=inhouse_match" class="text-decoration-none text-white-50">1. Tournament Details <i
+        class="far fa-circle-check rounded-tick"></i></a>
+    <a href="teamdivision.html" class="text-decoration-warning text-white-50">2. Team Selection <i
+        class="far fa-circle-check rounded-tick"></i></a>
+    <a href="team_announcement.html" class="text-decoration-none text-white-50">3. Team Announcement
+      <div class="circle-ellipsis">
+        <i class="fas fa-ellipsis-h active"></i>
+      </div>
+    </a>
+  </div>
   <div class="progress-container">
     <div class="step active">
       <div class="step-header">
